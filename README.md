@@ -1,4 +1,4 @@
-# A1 Sistema de Planificación de Recursos Empresariales.
+# A1: Sistema de Planificación de Recursos Empresariales.
 Es un proyecto open source utilizando lenguajes de programación PHP 7 para backend  y Anjular 7 para frontend. Base de datos postgres 11.  
 # Módulos del ERP
 •	Facturación
