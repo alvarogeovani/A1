@@ -1,6 +1,6 @@
 <?php
 
-/*esta es una prueba*/
+/*esta es una prueba 2*/
 
 use Zend\Mvc\Application;
 use Zend\Stdlib\ArrayUtils;
