@@ -1,8 +1,5 @@
 <?php
 
-/*Prueba Nelson 2**/
-/*esta es una prueba 2c*/
-
 use Zend\Mvc\Application;
 use Zend\Stdlib\ArrayUtils;
 
@@ -42,4 +39,3 @@ if (file_exists(__DIR__ . '/config/development.config.php')) {
 // Run the application!
 Application::init($appConfig)->run();
 
-/* hola mundo */
