@@ -1,15 +1,11 @@
 <?php
 namespace Seguridad\V1\Rest\Trusua;
 
-use Seguridad\Repository\ITrusuaRepository;
-use Seguridad\Core\CrudResource;
 use ZF\ApiProblem\ApiProblem;
-class TrusuaResource extends CrudResource 
+use ZF\Rest\AbstractResourceListener;
+
+class TrusuaResource extends AbstractResourceListener
 {
-    public function __construct(ITrusuaRepository $service)
-    {       
-        parent::__construct($service);
-    }
     /**
      * Create a resource
      *
@@ -18,7 +14,7 @@ class TrusuaResource extends CrudResource
      */
     public function create($data)
     {
-          return parent::create($data);
+        return new ApiProblem(405, 'The POST method has not been defined');
     }
 
     /**
@@ -29,7 +25,7 @@ class TrusuaResource extends CrudResource
      */
     public function delete($id)
     {
-        return parent::delete($id);
+        return new ApiProblem(405, 'The DELETE method has not been defined for individual resources');
     }
 
     /**
@@ -40,7 +36,7 @@ class TrusuaResource extends CrudResource
      */
     public function deleteList($data)
     {
-        return parent::deleteList($data);
+        return new ApiProblem(405, 'The DELETE method has not been defined for collections');
     }
 
     /**
@@ -51,7 +47,7 @@ class TrusuaResource extends CrudResource
      */
     public function fetch($id)
     {
-        return parent::fetch($id);
+        return new ApiProblem(405, 'The GET method has not been defined for individual resources');
     }
 
     /**
@@ -62,7 +58,7 @@ class TrusuaResource extends CrudResource
      */
     public function fetchAll($params = [])
     {
-        return parent::fetchAll($params);
+        return new ApiProblem(405, 'The GET method has not been defined for collections');
     }
 
     /**
@@ -74,7 +70,7 @@ class TrusuaResource extends CrudResource
      */
     public function patch($id, $data)
     {
-        return parent::patch($id, $data);
+        return new ApiProblem(405, 'The PATCH method has not been defined for individual resources');
     }
 
     /**
@@ -85,7 +81,7 @@ class TrusuaResource extends CrudResource
      */
     public function patchList($data)
     {
-        return parent::patchList($data);
+        return new ApiProblem(405, 'The PATCH method has not been defined for collections');
     }
 
     /**
@@ -96,7 +92,7 @@ class TrusuaResource extends CrudResource
      */
     public function replaceList($data)
     {
-        return parent::replaceList($data);
+        return new ApiProblem(405, 'The PUT method has not been defined for collections');
     }
 
     /**
@@ -108,6 +104,6 @@ class TrusuaResource extends CrudResource
      */
     public function update($id, $data)
     {
-        return parent::update($id, $data);
+        return new ApiProblem(405, 'The PUT method has not been defined for individual resources');
     }
 }

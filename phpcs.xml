@@ -29,4 +29,5 @@
     <file>config</file>
     <file>module</file>
     <file>public/index.php</file>
+    <file>src</file>
 </ruleset>
