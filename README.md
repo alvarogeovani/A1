@@ -3,6 +3,7 @@ A1-Sistema de Planificación de Recursos Empresariales
 
 Modulos
 ------------
+```bash
 Facturación
 Firma electrónica
 CRM
@@ -26,7 +27,7 @@ Nómina
 Reclutamiento
 Evaluación
 Acciones de personal
-
+```
 Requirements
 ------------
 
