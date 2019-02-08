@@ -236,12 +236,12 @@ class Trtabh {
     /**
      * Primary key
      */
-    private $primaryKey = "rtbsec1";
+    const PKEY = "rtbsec1";
 
     /**
      * Sequence
      */
-    private $sequence = "";
+  const SEQUENCE = "";
 
     /**
      * Constructor
@@ -322,29 +322,7 @@ class Trtabh {
         return $this->fields;
     }
 
-    /**
-     * SetSchema
-     *
-     * Schema name 
-     *
-     * @param $schema
-     * @return Schema name
-     */
-    public function setSchema($schema) {
-        $this->schema = $schema;
-        return $this;
-    }
-
-    /**
-     * GetSchema 
-     *
-     * @return null|
-     */
-    public function getSchema() {
-        return $this->schema;
-    }
-
-    /**
+      /**
      * Set rtbsec1
      *
      * Estos datos se ingresan en la Opción: Parámetros del Módulo

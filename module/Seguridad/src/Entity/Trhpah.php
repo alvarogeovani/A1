@@ -260,12 +260,12 @@ class Trhpah {
     /**
      * Primary key
      */
-    private $primaryKey = "rhhsecu";
+   const PKEY = "rhhsecu";
 
     /**
      * Sequence
      */
-    private $sequence = "";
+const SEQUENCE = "";
 
     /**
      * Constructor
@@ -346,27 +346,7 @@ class Trhpah {
         return $this->fields;
     }
 
-    /**
-     * SetSchema
-     *
-     * Schema name 
-     *
-     * @param $schema
-     * @return Schema name
-     */
-    public function setSchema($schema) {
-        $this->schema = $schema;
-        return $this;
-    }
-
-    /**
-     * GetSchema 
-     *
-     * @return null|
-     */
-    public function getSchema() {
-        return $this->schema;
-    }
+    
 
     /**
      * Set rhhsecu

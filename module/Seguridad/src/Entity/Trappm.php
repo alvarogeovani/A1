@@ -145,7 +145,7 @@ class Trappm {
      * Schema name 
      * 
      */
-    const   SCHEMA = 'seguridad';
+    const SCHEMA = 'seguridad';
 
     /**
      * Name of the table: trappm
@@ -156,12 +156,12 @@ class Trappm {
     /**
      * Primary key
      */
-    private $primaryKey = "rapsecu";
+    const PKEY = "rapsecu";
 
     /**
      * Sequence
      */
-    private $sequence = "";
+    const SEQUENCE = "";
 
     /**
      * Constructor
@@ -240,28 +240,6 @@ class Trappm {
             $this->fields[$key] = $claseArray[lcfirst($value)];
         }
         return $this->fields;
-    }
-
-    /**
-     * SetSchema
-     *
-     * Schema name 
-     *
-     * @param $schema
-     * @return Schema name
-     */
-    public function setSchema($schema) {
-        $this->schema = $schema;
-        return $this;
-    }
-
-    /**
-     * GetSchema 
-     *
-     * @return null|
-     */
-    public function getSchema() {
-        return $this->schema;
     }
 
     /**

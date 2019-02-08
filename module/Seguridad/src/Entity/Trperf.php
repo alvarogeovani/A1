@@ -115,12 +115,12 @@ class Trperf {
     /**
      * Primary key
      */
-    private $primaryKey = "rpesecu";
+    const PKEY = "rpesecu";
 
     /**
      * Sequence
      */
-    private $sequence = "";
+   const SEQUENCE = "";
 
     /**
      * Constructor
@@ -201,27 +201,7 @@ class Trperf {
         return $this->fields;
     }
 
-    /**
-     * SetSchema
-     *
-     * Schema name 
-     *
-     * @param $schema
-     * @return Schema name
-     */
-    public function setSchema($schema) {
-        $this->schema = $schema;
-        return $this;
-    }
-
-    /**
-     * GetSchema 
-     *
-     * @return null|
-     */
-    public function getSchema() {
-        return $this->schema;
-    }
+    
 
     /**
      * Set rpesecu

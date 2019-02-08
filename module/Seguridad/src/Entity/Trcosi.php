@@ -148,12 +148,12 @@ class Trcosi {
     /**
      * Primary key
      */
-    private $primaryKey = "rcosecu";
+   const PKEY = "rcosecu";
 
     /**
      * Sequence
      */
-    private $sequence = "";
+const SEQUENCE = "";
 
     /**
      * Constructor
@@ -234,27 +234,7 @@ class Trcosi {
         return $this->fields;
     }
 
-    /**
-     * SetSchema
-     *
-     * Schema name 
-     *
-     * @param $schema
-     * @return Schema name
-     */
-    public function setSchema($schema) {
-        $this->schema = $schema;
-        return $this;
-    }
-
-    /**
-     * GetSchema 
-     *
-     * @return null|
-     */
-    public function getSchema() {
-        return $this->schema;
-    }
+    
 
     /**
      * Set rcosecu

@@ -131,12 +131,12 @@ class Trmsus {
     /**
      * Primary key
      */
-    private $primaryKey = "rmssecu";
+    const PKEY = "rmssecu";
 
     /**
      * Sequence
      */
-    private $sequence = "";
+const SEQUENCE = "";
 
     /**
      * Constructor
@@ -217,27 +217,7 @@ class Trmsus {
         return $this->fields;
     }
 
-    /**
-     * SetSchema
-     *
-     * Schema name 
-     *
-     * @param $schema
-     * @return Schema name
-     */
-    public function setSchema($schema) {
-        $this->schema = $schema;
-        return $this;
-    }
-
-    /**
-     * GetSchema 
-     *
-     * @return null|
-     */
-    public function getSchema() {
-        return $this->schema;
-    }
+    
 
     /**
      * Set rmssecu

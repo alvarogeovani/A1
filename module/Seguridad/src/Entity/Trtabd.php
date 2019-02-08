@@ -236,12 +236,12 @@ class Trtabd {
     /**
      * Primary key
      */
-    private $primaryKey = "rtbsecu";
+    const PKEY = "rtbsecu";
 
     /**
      * Sequence
      */
-    private $sequence = "";
+    const SEQUENCE = "";
 
     /**
      * Constructor
@@ -322,27 +322,7 @@ class Trtabd {
         return $this->fields;
     }
 
-    /**
-     * SetSchema
-     *
-     * Schema name 
-     *
-     * @param $schema
-     * @return Schema name
-     */
-    public function setSchema($schema) {
-        $this->schema = $schema;
-        return $this;
-    }
-
-    /**
-     * GetSchema 
-     *
-     * @return null|
-     */
-    public function getSchema() {
-        return $this->schema;
-    }
+ 
 
     /**
      * Set rtbsecu
