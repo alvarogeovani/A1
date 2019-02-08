@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trcosi($data);
 	if ($ojbData->getRcosecu() == null || $ojbData->getRcosecu() == 0)

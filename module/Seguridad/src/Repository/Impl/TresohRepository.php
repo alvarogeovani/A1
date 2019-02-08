@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Tresoh($data);
 	if ($ojbData->getRehsecu() == null || $ojbData->getRehsecu() == 0)

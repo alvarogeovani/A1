@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trmsus($data);
 	if ($ojbData->getRmssecu() == null || $ojbData->getRmssecu() == 0)

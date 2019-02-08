@@ -20,7 +20,7 @@ interface ITrusuaRepository {
      *
      * @return void
      */
-    public function save(array $data);
+    public function save($data);
 
     /**
      * Delete the current entry

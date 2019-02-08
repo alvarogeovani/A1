@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Tresod($data);
 	if ($ojbData->getRedsecu() == null || $ojbData->getRedsecu() == 0)

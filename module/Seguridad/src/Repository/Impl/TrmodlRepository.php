@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trmodl($data);
 	if ($ojbData->getRmosecu() == null || $ojbData->getRmosecu() == 0)

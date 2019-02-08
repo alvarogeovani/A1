@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trmset($data);
 	if ($ojbData->getRmesecu() == null || $ojbData->getRmesecu() == 0)

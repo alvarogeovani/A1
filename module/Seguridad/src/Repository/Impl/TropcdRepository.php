@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Tropcd($data);
 	if ($ojbData->getRpasec2() == null || $ojbData->getRpasec2() == 0)

@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trreer($data);
 	if ($ojbData->getRresecu() == null || $ojbData->getRresecu() == 0)

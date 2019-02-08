@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trusua($data);
 	if ($ojbData->getRussecu() == null || $ojbData->getRussecu() == 0)

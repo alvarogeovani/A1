@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trayuh($data);
 	if ($ojbData->getRahsecu() == null || $ojbData->getRahsecu() == 0)

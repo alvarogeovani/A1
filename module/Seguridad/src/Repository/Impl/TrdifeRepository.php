@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trdife($data);
 	if ($ojbData->getRcosec1() == null || $ojbData->getRcosec1() == 0)

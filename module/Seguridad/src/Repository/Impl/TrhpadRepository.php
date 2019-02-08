@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trhpad($data);
 	if ($ojbData->getRhdsecu() == null || $ojbData->getRhdsecu() == 0)

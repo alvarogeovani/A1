@@ -145,8 +145,8 @@ class Trusua {
      * Schema name 
      * 
      */
-    const   SCHEMA = 'seguridad';
-    
+    const SCHEMA = 'seguridad';
+
     /**
      * Name of the table: trusua
      * 

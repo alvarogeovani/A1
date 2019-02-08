@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trdipo($data);
 	if ($ojbData->getRdisecu() == null || $ojbData->getRdisecu() == 0)

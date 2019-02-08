@@ -28,7 +28,7 @@
 	* @param array $data
 	* @return int
 	*/
-	public function save(array $data)
+	public function save($data)
 	{
 		$ojbData = new Trtabh($data);
 	if ($ojbData->getRtbsec1() == null || $ojbData->getRtbsec1() == 0)
