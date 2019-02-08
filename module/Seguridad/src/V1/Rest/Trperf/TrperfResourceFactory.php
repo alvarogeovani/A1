@@ -1,10 +1,11 @@
 <?php
 namespace Seguridad\V1\Rest\Trperf;
-
+use Seguridad\Repository\ITrperfRepository;
 class TrperfResourceFactory
 {
     public function __invoke($services)
     {
-        return new TrperfResource();
+        $mapper = $services->get(ITrperfRepository::class);
+        return new TrperfResource($mapper);
     }
 }

@@ -1,10 +1,11 @@
 <?php
 namespace Seguridad\V1\Rest\Trcosi;
-
+use Seguridad\Repository\ITrcosiRepository;
 class TrcosiResourceFactory
 {
     public function __invoke($services)
     {
-        return new TrcosiResource();
+        $mapper = $services->get(ITrcosiRepository::class);
+        return new TrcosiResource($mapper);
     }
 }

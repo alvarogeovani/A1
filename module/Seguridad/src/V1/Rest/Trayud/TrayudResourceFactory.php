@@ -1,10 +1,14 @@
 <?php
+
 namespace Seguridad\V1\Rest\Trayud;
 
-class TrayudResourceFactory
-{
-    public function __invoke($services)
-    {
-        return new TrayudResource();
+use Seguridad\Repository\ITrayudRepository;
+
+class TrayudResourceFactory {
+
+    public function __invoke($services) {
+        $mapper = $services->get(ITrayudRepository::class);
+        return new TrayudResource($mapper);
     }
+
 }

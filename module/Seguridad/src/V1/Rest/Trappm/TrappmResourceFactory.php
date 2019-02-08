@@ -1,10 +1,14 @@
 <?php
+
 namespace Seguridad\V1\Rest\Trappm;
 
-class TrappmResourceFactory
-{
-    public function __invoke($services)
-    {
-        return new TrappmResource();
+use Seguridad\Repository\ITrappmRepository;
+
+class TrappmResourceFactory {
+
+    public function __invoke($services) {
+        $mapper = $services->get(ITrappmRepository::class);
+        return new TrappmResource($mapper);
     }
+
 }

@@ -5,6 +5,7 @@ class TrmodlResourceFactory
 {
     public function __invoke($services)
     {
-        return new TrmodlResource();
+        $mapper = $services->get(ITrmodlRepository::class);
+        return new TrmodlResource($mapper);
     }
 }
