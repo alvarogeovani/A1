@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Tresod;
-
-class TresodEntity
+use Seguridad\Entity\Tresod;
+class TresodEntity extends Tresod
 {
 }

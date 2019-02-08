@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trayud;
-
-class TrayudEntity
+use Seguridad\Entity\Trayud;
+class TrayudEntity extends Trayud
 {
 }

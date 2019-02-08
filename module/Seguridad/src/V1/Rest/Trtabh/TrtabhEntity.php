@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trtabh;
-
-class TrtabhEntity
+use Seguridad\Entity\Trtabh;
+class TrtabhEntity extends Trtabh
 {
 }

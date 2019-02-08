@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trtabd;
-
-class TrtabdEntity
+use Seguridad\Entity\Trtabd;
+class TrtabdEntity extends Trtabd
 {
 }

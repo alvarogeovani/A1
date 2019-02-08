@@ -1,11 +1,16 @@
 <?php
 namespace Seguridad\V1\Rest\Trdipo;
 
+use Seguridad\Repository\ITrdipoRepository;
+use Seguridad\Core\CrudResource;
 use ZF\ApiProblem\ApiProblem;
-use ZF\Rest\AbstractResourceListener;
 
-class TrdipoResource extends AbstractResourceListener
+class TrdipoResource extends CrudResource
 {
+    public function __construct(ITrdipoRepository $service)
+    {       
+        parent::__construct($service);
+    }
     /**
      * Create a resource
      *
@@ -14,7 +19,7 @@ class TrdipoResource extends AbstractResourceListener
      */
     public function create($data)
     {
-        return new ApiProblem(405, 'The POST method has not been defined');
+          return parent::create($data);
     }
 
     /**
@@ -25,7 +30,7 @@ class TrdipoResource extends AbstractResourceListener
      */
     public function delete($id)
     {
-        return new ApiProblem(405, 'The DELETE method has not been defined for individual resources');
+        return parent::delete($id);
     }
 
     /**
@@ -36,7 +41,7 @@ class TrdipoResource extends AbstractResourceListener
      */
     public function deleteList($data)
     {
-        return new ApiProblem(405, 'The DELETE method has not been defined for collections');
+        return parent::deleteList($data);
     }
 
     /**
@@ -47,7 +52,7 @@ class TrdipoResource extends AbstractResourceListener
      */
     public function fetch($id)
     {
-        return new ApiProblem(405, 'The GET method has not been defined for individual resources');
+        return parent::fetch($id);
     }
 
     /**
@@ -58,7 +63,7 @@ class TrdipoResource extends AbstractResourceListener
      */
     public function fetchAll($params = [])
     {
-        return new ApiProblem(405, 'The GET method has not been defined for collections');
+        return parent::fetchAll($params);
     }
 
     /**
@@ -70,7 +75,7 @@ class TrdipoResource extends AbstractResourceListener
      */
     public function patch($id, $data)
     {
-        return new ApiProblem(405, 'The PATCH method has not been defined for individual resources');
+        return parent::patch($id, $data);
     }
 
     /**
@@ -81,7 +86,7 @@ class TrdipoResource extends AbstractResourceListener
      */
     public function patchList($data)
     {
-        return new ApiProblem(405, 'The PATCH method has not been defined for collections');
+        return parent::patchList($data);
     }
 
     /**
@@ -92,7 +97,7 @@ class TrdipoResource extends AbstractResourceListener
      */
     public function replaceList($data)
     {
-        return new ApiProblem(405, 'The PUT method has not been defined for collections');
+        return parent::replaceList($data);
     }
 
     /**
@@ -104,6 +109,6 @@ class TrdipoResource extends AbstractResourceListener
      */
     public function update($id, $data)
     {
-        return new ApiProblem(405, 'The PUT method has not been defined for individual resources');
+        return parent::update($id, $data);
     }
 }

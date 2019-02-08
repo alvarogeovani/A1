@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trmodl;
-
-class TrmodlEntity
+use Seguridad\Entity\Trmodl;
+class TrmodlEntity extends Trmodl
 {
 }

@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trhcos;
-
-class TrhcosEntity
+use Seguridad\Entity\Trhcos;
+class TrhcosEntity extends Trhcos
 {
 }

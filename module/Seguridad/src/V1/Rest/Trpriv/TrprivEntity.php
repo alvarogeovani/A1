@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trpriv;
-
-class TrprivEntity
+use Seguridad\Entity\Trpriv;
+class TrprivEntity extends Trpriv
 {
 }

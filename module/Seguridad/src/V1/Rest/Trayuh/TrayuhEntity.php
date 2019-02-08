@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trayuh;
-
-class TrayuhEntity
+use Seguridad\Entity\Trayuh;
+class TrayuhEntity extends Trayuh
 {
 }

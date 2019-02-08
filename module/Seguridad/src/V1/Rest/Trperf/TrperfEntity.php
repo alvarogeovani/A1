@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trperf;
-
-class TrperfEntity
+use Seguridad\Entity\Trperf;
+class TrperfEntity extends Trperf
 {
 }

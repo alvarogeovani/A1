@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trdife;
-
-class TrdifeEntity
+use Seguridad\Entity\Trdife;
+class TrdifeEntity extends Trdife
 {
 }

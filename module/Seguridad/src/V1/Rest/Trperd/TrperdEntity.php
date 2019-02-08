@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trperd;
-
-class TrperdEntity
+use Seguridad\Entity\Trperd;
+class TrperdEntity extends Trperd
 {
 }

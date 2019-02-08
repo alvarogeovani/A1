@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Tresoh;
-
-class TresohEntity
+use Seguridad\Entity\Tresoh;
+class TresohEntity extends Tresoh
 {
 }

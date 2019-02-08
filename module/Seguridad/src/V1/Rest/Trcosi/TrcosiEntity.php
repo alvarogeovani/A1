@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trcosi;
-
-class TrcosiEntity
+use Seguridad\Entity\Trcosi;
+class TrcosiEntity extends Trcosi
 {
 }

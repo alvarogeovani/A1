@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trpref;
-
-class TrprefEntity
+use Seguridad\Entity\Trpref;
+class TrprefEntity extends Trpref
 {
 }

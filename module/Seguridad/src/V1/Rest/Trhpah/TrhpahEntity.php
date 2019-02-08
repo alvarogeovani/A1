@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trhpah;
-
-class TrhpahEntity
+use Seguridad\Entity\Trusua;
+class TrhpahEntity extends Trusua
 {
 }

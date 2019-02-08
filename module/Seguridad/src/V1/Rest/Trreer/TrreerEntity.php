@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Trreer;
-
-class TrreerEntity
+use Seguridad\Entity\Trreer;
+class TrreerEntity extends Trreer
 {
 }

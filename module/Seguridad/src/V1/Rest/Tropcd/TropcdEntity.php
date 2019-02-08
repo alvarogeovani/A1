@@ -1,6 +1,6 @@
 <?php
 namespace Seguridad\V1\Rest\Tropcd;
-
-class TropcdEntity
+use Seguridad\Entity\Tropcd;
+class TropcdEntity extends Tropcd
 {
 }
