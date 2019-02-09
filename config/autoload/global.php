@@ -4,9 +4,9 @@ return [
         'selectors' => [],
     ],
     'db' => [
-        'adapters' => [
-            'dummy' => [],
-        ],
+        'driver' => 'pdo_pgsql',
+        'database' => 'A1',
+        'hostname' => 'localhost',
     ],
     'zf-mvc-auth' => [
         'authentication' => [

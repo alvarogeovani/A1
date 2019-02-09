@@ -1,6 +1,7 @@
 <?php
 return [
     'service_manager' => [
+        
         'factories' => [
             \Seguridad\V1\Rest\Trusua\TrusuaResource::class => \Seguridad\V1\Rest\Trusua\TrusuaResourceFactory::class,
             \Seguridad\V1\Rest\Trperf\TrperfResource::class => \Seguridad\V1\Rest\Trperf\TrperfResourceFactory::class,
@@ -29,6 +30,7 @@ return [
             \Seguridad\V1\Rest\Trreer\TrreerResource::class => \Seguridad\V1\Rest\Trreer\TrreerResourceFactory::class,
             \Seguridad\V1\Rest\Trtabd\TrtabdResource::class => \Seguridad\V1\Rest\Trtabd\TrtabdResourceFactory::class,
             \Seguridad\V1\Rest\Trtabh\TrtabhResource::class => \Seguridad\V1\Rest\Trtabh\TrtabhResourceFactory::class,
+            
         ],
     ],
     'router' => [

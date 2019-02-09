@@ -32,13 +32,17 @@
         "zendframework/zend-component-installer": "^1.1.1 || ^2.1.1",
         "zfcampus/zf-apigility": "^1.4",
         "zfcampus/zf-apigility-documentation": "^1.3",
-        "zfcampus/zf-development-mode": "^3.2"
+        "zfcampus/zf-development-mode": "^3.0",
+        "zendframework/zend-servicemanager": "^3.4",
+        "zendframework/zend-cache": "^2.7.1",
+        "zendframework/zend-mvc-i18n": "^1.0",
+        "zendframework/zend-log": "^2.9"
     },
     "require-dev": {
-        "zendframework/zend-developer-tools": "^1.2.1",
+        "zendframework/zend-developer-tools": "^1.1",
         "zendframework/zend-test": "^2.6.1 || ^3.2",
         "zfcampus/zf-apigility-admin": "^1.6",
-        "zfcampus/zf-asset-manager": "^1.2",
+        "zfcampus/zf-asset-manager": "^1.0",
         "zfcampus/zf-composer-autoloading": "^1.1.1 || ^2.1",
         "zfcampus/zf-deploy": "^1.3"
     },
@@ -49,12 +53,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Application\\": "module/Application/src/"
+            "Application\\": "module/Application/src/",
+            "Seguridad\\": "module/Seguridad/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ApplicationTest\\": "module/Application/test/"
+            "ApplicationTest\\": "module/Application/test/",
+            "SeguridadTest\\": "module/Seguridad/test/"
         },
         "files": [
             "src/Apigility/constants.php"
@@ -66,7 +72,9 @@
         "development-disable": "zf-development-mode disable",
         "development-enable": "zf-development-mode enable",
         "development-status": "zf-development-mode status",
-        "post-create-project-cmd": ["@development-enable"],
+        "post-create-project-cmd": [
+            "@development-enable"
+        ],
         "serve": "php -S 0.0.0.0:8080 -t public/",
         "test": "phpunit"
     }
