@@ -23,13 +23,14 @@ return [
             \Facturacion\Repository\ITtmovcRepository::class => \Facturacion\Repository\Impl\TtmovcRepository::class,
             \Facturacion\Repository\ITtncddRepository::class => \Facturacion\Repository\Impl\TtncddRepository::class,
             \Facturacion\Repository\ITtncdhRepository::class => \Facturacion\Repository\Impl\TtncdhRepository::class,
-            \Facturacion\Repository\ITtmovcRepository::class => \Facturacion\Repository\Impl\TtmovcRepository::class,
             \Facturacion\Repository\ITtncydRepository::class => \Facturacion\Repository\Impl\TtncydRepository::class,
             \Facturacion\Repository\ITtpeddRepository::class => \Facturacion\Repository\Impl\TtpeddRepository::class,
             \Facturacion\Repository\ITtpedhRepository::class => \Facturacion\Repository\Impl\TtpedhRepository::class,
             \Facturacion\Repository\ITtptovRepository::class => \Facturacion\Repository\Impl\TtptovRepository::class,
             \Facturacion\Repository\ITtpuemRepository::class => \Facturacion\Repository\Impl\TtpuemRepository::class,
             \Facturacion\Repository\ITtrvtdRepository::class => \Facturacion\Repository\Impl\TtrvtdRepository::class,
+            \Facturacion\Repository\ITtrvthRepository::class => \Facturacion\Repository\Impl\TtrvthRepository::class,
+            \Facturacion\Repository\ITttidoRepository::class => \Facturacion\Repository\Impl\TttidoRepository::class,
         ],
         'factories' => [
             \Facturacion\Repository\Impl\TtagenRepository::class => \Facturacion\Repository\Factory\TtagenRepositoryFactory::class,
@@ -60,6 +61,7 @@ return [
             \Facturacion\Repository\Impl\TtpuemRepository::class => \Facturacion\Repository\Factory\TtpuemRepositoryFactory::class,
             \Facturacion\Repository\Impl\TtrvtdRepository::class => \Facturacion\Repository\Factory\TtrvtdRepositoryFactory::class,
             \Facturacion\Repository\Impl\TtrvthRepository::class => \Facturacion\Repository\Factory\TtrvthRepositoryFactory::class,
+            \Facturacion\Repository\Impl\TttidoRepository::class => \Facturacion\Repository\Factory\TttidoRepositoryFactory::class,
             //Resource
             \Facturacion\V1\Rest\Ttagen\TtagenResource::class => \Facturacion\V1\Rest\Ttagen\TtagenResourceFactory::class,
             \Facturacion\V1\Rest\Ttauto\TtautoResource::class => \Facturacion\V1\Rest\Ttauto\TtautoResourceFactory::class,
