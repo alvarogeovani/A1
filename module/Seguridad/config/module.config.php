@@ -1,4 +1,5 @@
 <?php
+
 return [
     'service_manager' => [
         'aliases' => [
@@ -17,7 +18,7 @@ return [
             \Seguridad\Repository\ITresohRepository::class => \Seguridad\Repository\Impl\TresohRepository::class,
             \Seguridad\Repository\ITrhcosRepository::class => \Seguridad\Repository\Impl\TrhcosRepository::class,
             \Seguridad\Repository\ITrhpadRepository::class => \Seguridad\Repository\Impl\TrhpadRepository::class,
-            'Seguridad\\Repository\\TrhpahRepository' => \Seguridad\Repository\Impl\TrhpahRepository::class,
+            \Seguridad\Repository\TrhpahRepository::class => \Seguridad\Repository\Impl\TrhpahRepository::class,
             \Seguridad\Repository\ITrhpamRepository::class => \Seguridad\Repository\Impl\TrhpamRepository::class,
             \Seguridad\Repository\ITrmsetRepository::class => \Seguridad\Repository\Impl\TrmsetRepository::class,
             \Seguridad\Repository\ITrmsusRepository::class => \Seguridad\Repository\Impl\TrmsusRepository::class,
