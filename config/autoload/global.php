@@ -7,6 +7,9 @@ return [
         'driver' => 'pdo_pgsql',
         'database' => 'A1',
         'hostname' => 'localhost',
+        'adapters' => [
+            'pgA1' => [],
+        ],
     ],
     'zf-mvc-auth' => [
         'authentication' => [

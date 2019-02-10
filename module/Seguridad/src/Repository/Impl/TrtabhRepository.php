@@ -25,7 +25,7 @@
 
 	/**
 	* Save the current entry
-	* @param array $data
+	* @param  $data
 	* @return int
 	*/
 	public function save($data)
@@ -68,8 +68,8 @@
 	*/
 	public function find($id)
 	{
-	 $id = (int) $id;
-	$row = $this->tableGateway->find(['rtbsec1' => $id]);
+	 $idt = (int) $id;
+	$row = $this->tableGateway->find(['rtbsec1' => $idt]);
 	if (!$row)
 	 {
 	 throw new \RuntimeException('The Trtabh could not be found:rtbsec1='.$id);

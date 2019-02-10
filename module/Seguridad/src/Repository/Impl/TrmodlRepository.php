@@ -25,7 +25,7 @@
 
 	/**
 	* Save the current entry
-	* @param array $data
+	* @param  $data
 	* @return int
 	*/
 	public function save($data)
@@ -68,8 +68,8 @@
 	*/
 	public function find($id)
 	{
-	 $id = (int) $id;
-	$row = $this->tableGateway->find(['rmosecu' => $id]);
+	 $idt = (int) $id;
+	$row = $this->tableGateway->find(['rmosecu' => $idt]);
 	if (!$row)
 	 {
 	 throw new \RuntimeException('The Trmodl could not be found:rmosecu='.$id);

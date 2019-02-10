@@ -25,7 +25,7 @@
 
 	/**
 	* Save the current entry
-	* @param array $data
+	* @param  $data
 	* @return int
 	*/
 	public function save($data)
@@ -68,8 +68,8 @@
 	*/
 	public function find($id)
 	{
-	 $id = (int) $id;
-	$row = $this->tableGateway->find(['rmssecu' => $id]);
+	 $idt = (int) $id;
+	$row = $this->tableGateway->find(['rmssecu' => $idt]);
 	if (!$row)
 	 {
 	 throw new \RuntimeException('The Trmsus could not be found:rmssecu='.$id);

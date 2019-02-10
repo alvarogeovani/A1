@@ -25,7 +25,7 @@
 
 	/**
 	* Save the current entry
-	* @param array $data
+	* @param  $data
 	* @return int
 	*/
 	public function save($data)
@@ -68,8 +68,8 @@
 	*/
 	public function find($id)
 	{
-	 $id = (int) $id;
-	$row = $this->tableGateway->find(['bcisecu' => $id]);
+	 $idt = (int) $id;
+	$row = $this->tableGateway->find(['bcisecu' => $idt]);
 	if (!$row)
 	 {
 	 throw new \RuntimeException('The Trcias could not be found:bcisecu='.$id);
