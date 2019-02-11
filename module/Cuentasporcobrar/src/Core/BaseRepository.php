@@ -14,7 +14,8 @@ use Seguridad\Excepciones\DeleteExcepcion;
 use Seguridad\Excepciones\FindExcepcion;
 use Seguridad\Excepciones\SaveExcepcion;
 
-class BaseRepository extends AbstractTableGateway {
+class BaseRepository extends AbstractTableGateway
+    {
 
     /**
      * Constructor
@@ -27,7 +28,8 @@ class BaseRepository extends AbstractTableGateway {
      *
      * @throws Exception\InvalidArgumentException
      */
-    public function __construct($entity, $dbAdapter) {
+    public function __construct($entity, $dbAdapter)
+    {
         // table
         $this->table = new TableIdentifier($entity::TABLE, $entity::SCHEMA);
         // adapter
@@ -35,21 +37,27 @@ class BaseRepository extends AbstractTableGateway {
 
         // process features
         $features = new \Zend\Db\TableGateway\Feature\SequenceFeature($entity::PKEY, $entity::SEQUENCE);
-        if ($features !== null) {
-            if ($features instanceof Feature\AbstractFeature) {
+        if ($features !== null)
+        {
+            if ($features instanceof Feature\AbstractFeature)
+            {
                 $features = [$features];
             }
-            if (is_array($features)) {
+            if (is_array($features))
+            {
                 $this->featureSet = new Feature\FeatureSet($features);
-            } elseif ($features instanceof Feature\FeatureSet) {
+            } elseif ($features instanceof Feature\FeatureSet)
+            {
                 $this->featureSet = $features;
-            } else {
+            } else
+            {
                 throw new Exception\InvalidArgumentException(
                 'TableGateway expects $feature to be an instance of an AbstractFeature or a FeatureSet, or an '
                 . 'array of AbstractFeatures'
                 );
             }
-        } else {
+        } else
+        {
             $this->featureSet = new Feature\FeatureSet();
         }
 
@@ -61,7 +69,8 @@ class BaseRepository extends AbstractTableGateway {
         $this->sql = new Sql($this->adapter, $this->table);
 
         // check sql object bound to same table
-        if ($this->sql->getTable() != $this->table) {
+        if ($this->sql->getTable() != $this->table)
+        {
             throw new Exception\InvalidArgumentException(
             'The table inside the provided Sql object must match the table of this TableGateway'
             );
@@ -76,14 +85,19 @@ class BaseRepository extends AbstractTableGateway {
      * @param  array $set
      * @return int
      */
-    public function insert($set) {
-        try {
-            if (parent::insert($set) > 0) {
+    public function insert($set)
+    {
+        try
+        {
+            if (parent::insert($set) > 0)
+            {
                 return parent::getLastInsertValue();
-            } else {
+            } else
+            {
                 return false;
             }
-        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex) {
+        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex)
+        {
             throw new SaveExcepcion($ex, $set);
         }
     }
@@ -96,10 +110,13 @@ class BaseRepository extends AbstractTableGateway {
      * @param  null|array $joins
      * @return int
      */
-    public function update($set, $where = null, array $joins = null) {
-        try {
+    public function update($set, $where = null, array $joins = null)
+    {
+        try
+        {
             return parent::update($set, $where);
-        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex) {
+        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex)
+        {
             throw new UpdateExcepcion($ex, $set, $where);
         }
     }
@@ -110,10 +127,13 @@ class BaseRepository extends AbstractTableGateway {
      * @param  Where|\Closure|string|array $where
      * @return int
      */
-    public function delete($where) {
-        try {
+    public function delete($where)
+    {
+        try
+        {
             return parent::delete($where);
-        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex) {
+        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex)
+        {
             throw new DeleteExcepcion($ex, $where);
         }
     }
@@ -124,10 +144,13 @@ class BaseRepository extends AbstractTableGateway {
      * @param Where|\Closure|string|array $where
      * @return ResultSet
      */
-    public function find($where) {
-        try {
+    public function find($where)
+    {
+        try
+        {
             return parent::select($where)->current();
-        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex) {
+        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex)
+        {
             throw new FindExcepcion($ex, $where);
         }
     }
@@ -139,22 +162,30 @@ class BaseRepository extends AbstractTableGateway {
      * @param int $id
      * @return Array ResultSet
      */
-    public function fetchAll() {
-        try {
+    public function fetchAll()
+    {
+        try
+        {
             return parent::select();
-        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex) {
+        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex)
+        {
             throw new FindExcepcion($ex);
         }
     }
 
-    public function fetchList($where, $order = null, $limit = null, $offset = null) {
-        try {
-            if ($order != null) {
+    public function fetchList($where, $order = null, $limit = null, $offset = null)
+    {
+        try
+        {
+            if ($order != null)
+            {
                 return self::select($where, $order, $limit, $offset);
-            } else {
+            } else
+            {
                 return parent::select($where);
             }
-        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex) {
+        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex)
+        {
 
             throw new FindExcepcion($ex, $where);
         }
@@ -166,20 +197,26 @@ class BaseRepository extends AbstractTableGateway {
      * @return Driver\StatementInterface|ResultSet\ResultSet
      * * @throws Exception\InvalidArgumentException
      */
-    public function runNativeSQL($query) {
-        try {
+    public function runNativeSQL($query)
+    {
+        try
+        {
             return $this->adapter->query($query, Adapter::QUERY_MODE_EXECUTE);
-        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex) {
+        } catch (\Zend\Db\Adapter\Exception\InvalidQueryException $ex)
+        {
             throw new FindExcepcion($ex);
         }
     }
-/**
- * Conviente el obj que envia el cliente a un arreglo
- * @param type $d  obj-json
- * @return type array
- */
-    function objectToArray($d) {
-        if (is_object($d)) {
+
+    /**
+     * Conviente el obj que envia el cliente a un arreglo
+     * @param type $d  obj-json
+     * @return type array
+     */
+    function objectToArray($d)
+    {
+        if (is_object($d))
+        {
             // Gets the properties of the given object
             // with get_object_vars function
             $d = get_object_vars($d);
@@ -187,4 +224,4 @@ class BaseRepository extends AbstractTableGateway {
         return $d;
     }
 
-}
+    }

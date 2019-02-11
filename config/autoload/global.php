@@ -1,21 +1,21 @@
 <?php
-return [
-    'zf-content-negotiation' => [
-        'selectors' => [],
-    ],
-    'db' => [
+return array(
+    'zf-content-negotiation' => array(
+        'selectors' => array(),
+    ),
+    'db' => array(
         'driver' => 'pdo_pgsql',
         'database' => 'A1',
         'hostname' => 'localhost',
-        'adapters' => [
-            'pgA1' => [],
-        ],
-    ],
-    'zf-mvc-auth' => [
-        'authentication' => [
-            'map' => [
-                'Seguridad\\V1' => 'a1authentication',
-            ],
-        ],
-    ],
-];
+        'adapters' => array(
+            'pgA1' => array(),
+        ),
+    ),
+    'zf-mvc-auth' => array(
+        'authentication' => array(
+            'map' => array(
+                'Seguridad\\V1' => 'a1auth',
+            ),
+        ),
+    ),
+);

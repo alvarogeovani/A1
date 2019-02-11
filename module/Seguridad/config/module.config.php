@@ -1,342 +1,341 @@
 <?php
-
-return [
-    'service_manager' => [
-        'aliases' => [
-            \Seguridad\Repository\ITrusuaRepository::class => \Seguridad\Repository\Impl\TrusuaRepository::class,
-            \Seguridad\Repository\ITrperfRepository::class => \Seguridad\Repository\Impl\TrperfRepository::class,
-            \Seguridad\Repository\ITrmodlRepository::class => \Seguridad\Repository\Impl\TrmodlRepository::class,
-            \Seguridad\Repository\ITrciasRepository::class => \Seguridad\Repository\Impl\TrciasRepository::class,
-            \Seguridad\Repository\ITrappmRepository::class => \Seguridad\Repository\Impl\TrappmRepository::class,
-            \Seguridad\Repository\ITrayudRepository::class => \Seguridad\Repository\Impl\TrayudRepository::class,
-            \Seguridad\Repository\ITrayuhRepository::class => \Seguridad\Repository\Impl\TrayuhRepository::class,
-            \Seguridad\Repository\ITrcosiRepository::class => \Seguridad\Repository\Impl\TrcosiRepository::class,
-            \Seguridad\Repository\ITrdeprRepository::class => \Seguridad\Repository\Impl\TrdeprRepository::class,
-            \Seguridad\Repository\ITrdifeRepository::class => \Seguridad\Repository\Impl\TrdifeRepository::class,
-            \Seguridad\Repository\ITrdipoRepository::class => \Seguridad\Repository\Impl\TrdipoRepository::class,
-            \Seguridad\Repository\ITresodRepository::class => \Seguridad\Repository\Impl\TresodRepository::class,
-            \Seguridad\Repository\ITresohRepository::class => \Seguridad\Repository\Impl\TresohRepository::class,
-            \Seguridad\Repository\ITrhcosRepository::class => \Seguridad\Repository\Impl\TrhcosRepository::class,
-            \Seguridad\Repository\ITrhpadRepository::class => \Seguridad\Repository\Impl\TrhpadRepository::class,
-            \Seguridad\Repository\TrhpahRepository::class => \Seguridad\Repository\Impl\TrhpahRepository::class,
-            \Seguridad\Repository\ITrhpamRepository::class => \Seguridad\Repository\Impl\TrhpamRepository::class,
-            \Seguridad\Repository\ITrmsetRepository::class => \Seguridad\Repository\Impl\TrmsetRepository::class,
-            \Seguridad\Repository\ITrmsusRepository::class => \Seguridad\Repository\Impl\TrmsusRepository::class,
-            \Seguridad\Repository\ITropcdRepository::class => \Seguridad\Repository\Impl\TropcdRepository::class,
-            \Seguridad\Repository\ITropchRepository::class => \Seguridad\Repository\Impl\TropchRepository::class,
-            \Seguridad\Repository\ITrperdRepository::class => \Seguridad\Repository\Impl\TrperdRepository::class,
-            \Seguridad\Repository\ITrprefRepository::class => \Seguridad\Repository\Impl\TrprefRepository::class,
-            \Seguridad\Repository\ITrprivRepository::class => \Seguridad\Repository\Impl\TrprivRepository::class,
-            \Seguridad\Repository\ITrreerRepository::class => \Seguridad\Repository\Impl\TrreerRepository::class,
-            \Seguridad\Repository\ITrtabdRepository::class => \Seguridad\Repository\Impl\TrtabdRepository::class,
-            \Seguridad\Repository\ITrtabhRepository::class => \Seguridad\Repository\Impl\TrtabhRepository::class,
-        ],
-        'factories' => [
-            \Seguridad\Repository\Impl\TrusuaRepository::class => \Seguridad\Repository\Factory\TrusuaRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrperfRepository::class => \Seguridad\Repository\Factory\TrperfRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrmodlRepository::class => \Seguridad\Repository\Factory\TrmodlRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrciasRepository::class => \Seguridad\Repository\Factory\TrciasRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrappmRepository::class => \Seguridad\Repository\Factory\TrappmRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrayudRepository::class => \Seguridad\Repository\Factory\TrayudRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrayuhRepository::class => \Seguridad\Repository\Factory\TrayuhRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrcosiRepository::class => \Seguridad\Repository\Factory\TrcosiRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrdeprRepository::class => \Seguridad\Repository\Factory\TrdeprRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrdifeRepository::class => \Seguridad\Repository\Factory\TrdifeRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrdipoRepository::class => \Seguridad\Repository\Factory\TrdipoRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TresodRepository::class => \Seguridad\Repository\Factory\TresodRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TresohRepository::class => \Seguridad\Repository\Factory\TresohRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrhcosRepository::class => \Seguridad\Repository\Factory\TrhcosRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrhpadRepository::class => \Seguridad\Repository\Factory\TrhpadRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrhpahRepository::class => \Seguridad\Repository\Factory\TrhpahRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrhpamRepository::class => \Seguridad\Repository\Factory\TrhpamRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrmsetRepository::class => \Seguridad\Repository\Factory\TrmsetRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrmsusRepository::class => \Seguridad\Repository\Factory\TrmsusRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TropcdRepository::class => \Seguridad\Repository\Factory\TropcdRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TropchRepository::class => \Seguridad\Repository\Factory\TropchRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrperdRepository::class => \Seguridad\Repository\Factory\TrperdRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrprefRepository::class => \Seguridad\Repository\Factory\TrprefRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrprivRepository::class => \Seguridad\Repository\Factory\TrprivRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrreerRepository::class => \Seguridad\Repository\Factory\TrreerRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrtabdRepository::class => \Seguridad\Repository\Factory\TrtabdRepositoryFactory::class,
-            \Seguridad\Repository\Impl\TrtabhRepository::class => \Seguridad\Repository\Factory\TrtabhRepositoryFactory::class,
-            \Seguridad\V1\Rest\Trusua\TrusuaResource::class => \Seguridad\V1\Rest\Trusua\TrusuaResourceFactory::class,
-            \Seguridad\V1\Rest\Trperf\TrperfResource::class => \Seguridad\V1\Rest\Trperf\TrperfResourceFactory::class,
-            \Seguridad\V1\Rest\Trmodl\TrmodlResource::class => \Seguridad\V1\Rest\Trmodl\TrmodlResourceFactory::class,
-            \Seguridad\V1\Rest\Trcias\TrciasResource::class => \Seguridad\V1\Rest\Trcias\TrciasResourceFactory::class,
-            \Seguridad\V1\Rest\Trappm\TrappmResource::class => \Seguridad\V1\Rest\Trappm\TrappmResourceFactory::class,
-            \Seguridad\V1\Rest\Trayud\TrayudResource::class => \Seguridad\V1\Rest\Trayud\TrayudResourceFactory::class,
-            \Seguridad\V1\Rest\Trayuh\TrayuhResource::class => \Seguridad\V1\Rest\Trayuh\TrayuhResourceFactory::class,
-            \Seguridad\V1\Rest\Trcosi\TrcosiResource::class => \Seguridad\V1\Rest\Trcosi\TrcosiResourceFactory::class,
-            \Seguridad\V1\Rest\Trdepr\TrdeprResource::class => \Seguridad\V1\Rest\Trdepr\TrdeprResourceFactory::class,
-            \Seguridad\V1\Rest\Trdife\TrdifeResource::class => \Seguridad\V1\Rest\Trdife\TrdifeResourceFactory::class,
-            \Seguridad\V1\Rest\Trdipo\TrdipoResource::class => \Seguridad\V1\Rest\Trdipo\TrdipoResourceFactory::class,
-            \Seguridad\V1\Rest\Tresod\TresodResource::class => \Seguridad\V1\Rest\Tresod\TresodResourceFactory::class,
-            \Seguridad\V1\Rest\Tresoh\TresohResource::class => \Seguridad\V1\Rest\Tresoh\TresohResourceFactory::class,
-            \Seguridad\V1\Rest\Trhcos\TrhcosResource::class => \Seguridad\V1\Rest\Trhcos\TrhcosResourceFactory::class,
-            \Seguridad\V1\Rest\Trhpad\TrhpadResource::class => \Seguridad\V1\Rest\Trhpad\TrhpadResourceFactory::class,
-            \Seguridad\V1\Rest\Trhpah\TrhpahResource::class => \Seguridad\V1\Rest\Trhpah\TrhpahResourceFactory::class,
-            \Seguridad\V1\Rest\Trhpam\TrhpamResource::class => \Seguridad\V1\Rest\Trhpam\TrhpamResourceFactory::class,
-            \Seguridad\V1\Rest\Trmset\TrmsetResource::class => \Seguridad\V1\Rest\Trmset\TrmsetResourceFactory::class,
-            \Seguridad\V1\Rest\Trmsus\TrmsusResource::class => \Seguridad\V1\Rest\Trmsus\TrmsusResourceFactory::class,
-            \Seguridad\V1\Rest\Tropcd\TropcdResource::class => \Seguridad\V1\Rest\Tropcd\TropcdResourceFactory::class,
-            \Seguridad\V1\Rest\Tropch\TropchResource::class => \Seguridad\V1\Rest\Tropch\TropchResourceFactory::class,
-            \Seguridad\V1\Rest\Trperd\TrperdResource::class => \Seguridad\V1\Rest\Trperd\TrperdResourceFactory::class,
-            \Seguridad\V1\Rest\Trpref\TrprefResource::class => \Seguridad\V1\Rest\Trpref\TrprefResourceFactory::class,
-            \Seguridad\V1\Rest\Trpriv\TrprivResource::class => \Seguridad\V1\Rest\Trpriv\TrprivResourceFactory::class,
-            \Seguridad\V1\Rest\Trreer\TrreerResource::class => \Seguridad\V1\Rest\Trreer\TrreerResourceFactory::class,
-            \Seguridad\V1\Rest\Trtabd\TrtabdResource::class => \Seguridad\V1\Rest\Trtabd\TrtabdResourceFactory::class,
-            \Seguridad\V1\Rest\Trtabh\TrtabhResource::class => \Seguridad\V1\Rest\Trtabh\TrtabhResourceFactory::class,
-        ],
-    ],
-    'router' => [
-        'routes' => [
-            'seguridad.rest.trusua' => [
+return array(
+    'service_manager' => array(
+        'aliases' => array(
+            'Seguridad\\Repository\\ITrusuaRepository' => 'Seguridad\\Repository\\Impl\\TrusuaRepository',
+            'Seguridad\\Repository\\ITrperfRepository' => 'Seguridad\\Repository\\Impl\\TrperfRepository',
+            'Seguridad\\Repository\\ITrmodlRepository' => 'Seguridad\\Repository\\Impl\\TrmodlRepository',
+            'Seguridad\\Repository\\ITrciasRepository' => 'Seguridad\\Repository\\Impl\\TrciasRepository',
+            'Seguridad\\Repository\\ITrappmRepository' => 'Seguridad\\Repository\\Impl\\TrappmRepository',
+            'Seguridad\\Repository\\ITrayudRepository' => 'Seguridad\\Repository\\Impl\\TrayudRepository',
+            'Seguridad\\Repository\\ITrayuhRepository' => 'Seguridad\\Repository\\Impl\\TrayuhRepository',
+            'Seguridad\\Repository\\ITrcosiRepository' => 'Seguridad\\Repository\\Impl\\TrcosiRepository',
+            'Seguridad\\Repository\\ITrdeprRepository' => 'Seguridad\\Repository\\Impl\\TrdeprRepository',
+            'Seguridad\\Repository\\ITrdifeRepository' => 'Seguridad\\Repository\\Impl\\TrdifeRepository',
+            'Seguridad\\Repository\\ITrdipoRepository' => 'Seguridad\\Repository\\Impl\\TrdipoRepository',
+            'Seguridad\\Repository\\ITresodRepository' => 'Seguridad\\Repository\\Impl\\TresodRepository',
+            'Seguridad\\Repository\\ITresohRepository' => 'Seguridad\\Repository\\Impl\\TresohRepository',
+            'Seguridad\\Repository\\ITrhcosRepository' => 'Seguridad\\Repository\\Impl\\TrhcosRepository',
+            'Seguridad\\Repository\\ITrhpadRepository' => 'Seguridad\\Repository\\Impl\\TrhpadRepository',
+            'Seguridad\\Repository\\TrhpahRepository' => 'Seguridad\\Repository\\Impl\\TrhpahRepository',
+            'Seguridad\\Repository\\ITrhpamRepository' => 'Seguridad\\Repository\\Impl\\TrhpamRepository',
+            'Seguridad\\Repository\\ITrmsetRepository' => 'Seguridad\\Repository\\Impl\\TrmsetRepository',
+            'Seguridad\\Repository\\ITrmsusRepository' => 'Seguridad\\Repository\\Impl\\TrmsusRepository',
+            'Seguridad\\Repository\\ITropcdRepository' => 'Seguridad\\Repository\\Impl\\TropcdRepository',
+            'Seguridad\\Repository\\ITropchRepository' => 'Seguridad\\Repository\\Impl\\TropchRepository',
+            'Seguridad\\Repository\\ITrperdRepository' => 'Seguridad\\Repository\\Impl\\TrperdRepository',
+            'Seguridad\\Repository\\ITrprefRepository' => 'Seguridad\\Repository\\Impl\\TrprefRepository',
+            'Seguridad\\Repository\\ITrprivRepository' => 'Seguridad\\Repository\\Impl\\TrprivRepository',
+            'Seguridad\\Repository\\ITrreerRepository' => 'Seguridad\\Repository\\Impl\\TrreerRepository',
+            'Seguridad\\Repository\\ITrtabdRepository' => 'Seguridad\\Repository\\Impl\\TrtabdRepository',
+            'Seguridad\\Repository\\ITrtabhRepository' => 'Seguridad\\Repository\\Impl\\TrtabhRepository',
+        ),
+        'factories' => array(
+            'Seguridad\\Repository\\Impl\\TrusuaRepository' => 'Seguridad\\Repository\\Factory\\TrusuaRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrperfRepository' => 'Seguridad\\Repository\\Factory\\TrperfRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrmodlRepository' => 'Seguridad\\Repository\\Factory\\TrmodlRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrciasRepository' => 'Seguridad\\Repository\\Factory\\TrciasRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrappmRepository' => 'Seguridad\\Repository\\Factory\\TrappmRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrayudRepository' => 'Seguridad\\Repository\\Factory\\TrayudRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrayuhRepository' => 'Seguridad\\Repository\\Factory\\TrayuhRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrcosiRepository' => 'Seguridad\\Repository\\Factory\\TrcosiRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrdeprRepository' => 'Seguridad\\Repository\\Factory\\TrdeprRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrdifeRepository' => 'Seguridad\\Repository\\Factory\\TrdifeRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrdipoRepository' => 'Seguridad\\Repository\\Factory\\TrdipoRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TresodRepository' => 'Seguridad\\Repository\\Factory\\TresodRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TresohRepository' => 'Seguridad\\Repository\\Factory\\TresohRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrhcosRepository' => 'Seguridad\\Repository\\Factory\\TrhcosRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrhpadRepository' => 'Seguridad\\Repository\\Factory\\TrhpadRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrhpahRepository' => 'Seguridad\\Repository\\Factory\\TrhpahRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrhpamRepository' => 'Seguridad\\Repository\\Factory\\TrhpamRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrmsetRepository' => 'Seguridad\\Repository\\Factory\\TrmsetRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrmsusRepository' => 'Seguridad\\Repository\\Factory\\TrmsusRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TropcdRepository' => 'Seguridad\\Repository\\Factory\\TropcdRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TropchRepository' => 'Seguridad\\Repository\\Factory\\TropchRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrperdRepository' => 'Seguridad\\Repository\\Factory\\TrperdRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrprefRepository' => 'Seguridad\\Repository\\Factory\\TrprefRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrprivRepository' => 'Seguridad\\Repository\\Factory\\TrprivRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrreerRepository' => 'Seguridad\\Repository\\Factory\\TrreerRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrtabdRepository' => 'Seguridad\\Repository\\Factory\\TrtabdRepositoryFactory',
+            'Seguridad\\Repository\\Impl\\TrtabhRepository' => 'Seguridad\\Repository\\Factory\\TrtabhRepositoryFactory',
+            'Seguridad\\V1\\Rest\\Trusua\\TrusuaResource' => 'Seguridad\\V1\\Rest\\Trusua\\TrusuaResourceFactory',
+            'Seguridad\\V1\\Rest\\Trperf\\TrperfResource' => 'Seguridad\\V1\\Rest\\Trperf\\TrperfResourceFactory',
+            'Seguridad\\V1\\Rest\\Trmodl\\TrmodlResource' => 'Seguridad\\V1\\Rest\\Trmodl\\TrmodlResourceFactory',
+            'Seguridad\\V1\\Rest\\Trcias\\TrciasResource' => 'Seguridad\\V1\\Rest\\Trcias\\TrciasResourceFactory',
+            'Seguridad\\V1\\Rest\\Trappm\\TrappmResource' => 'Seguridad\\V1\\Rest\\Trappm\\TrappmResourceFactory',
+            'Seguridad\\V1\\Rest\\Trayud\\TrayudResource' => 'Seguridad\\V1\\Rest\\Trayud\\TrayudResourceFactory',
+            'Seguridad\\V1\\Rest\\Trayuh\\TrayuhResource' => 'Seguridad\\V1\\Rest\\Trayuh\\TrayuhResourceFactory',
+            'Seguridad\\V1\\Rest\\Trcosi\\TrcosiResource' => 'Seguridad\\V1\\Rest\\Trcosi\\TrcosiResourceFactory',
+            'Seguridad\\V1\\Rest\\Trdepr\\TrdeprResource' => 'Seguridad\\V1\\Rest\\Trdepr\\TrdeprResourceFactory',
+            'Seguridad\\V1\\Rest\\Trdife\\TrdifeResource' => 'Seguridad\\V1\\Rest\\Trdife\\TrdifeResourceFactory',
+            'Seguridad\\V1\\Rest\\Trdipo\\TrdipoResource' => 'Seguridad\\V1\\Rest\\Trdipo\\TrdipoResourceFactory',
+            'Seguridad\\V1\\Rest\\Tresod\\TresodResource' => 'Seguridad\\V1\\Rest\\Tresod\\TresodResourceFactory',
+            'Seguridad\\V1\\Rest\\Tresoh\\TresohResource' => 'Seguridad\\V1\\Rest\\Tresoh\\TresohResourceFactory',
+            'Seguridad\\V1\\Rest\\Trhcos\\TrhcosResource' => 'Seguridad\\V1\\Rest\\Trhcos\\TrhcosResourceFactory',
+            'Seguridad\\V1\\Rest\\Trhpad\\TrhpadResource' => 'Seguridad\\V1\\Rest\\Trhpad\\TrhpadResourceFactory',
+            'Seguridad\\V1\\Rest\\Trhpah\\TrhpahResource' => 'Seguridad\\V1\\Rest\\Trhpah\\TrhpahResourceFactory',
+            'Seguridad\\V1\\Rest\\Trhpam\\TrhpamResource' => 'Seguridad\\V1\\Rest\\Trhpam\\TrhpamResourceFactory',
+            'Seguridad\\V1\\Rest\\Trmset\\TrmsetResource' => 'Seguridad\\V1\\Rest\\Trmset\\TrmsetResourceFactory',
+            'Seguridad\\V1\\Rest\\Trmsus\\TrmsusResource' => 'Seguridad\\V1\\Rest\\Trmsus\\TrmsusResourceFactory',
+            'Seguridad\\V1\\Rest\\Tropcd\\TropcdResource' => 'Seguridad\\V1\\Rest\\Tropcd\\TropcdResourceFactory',
+            'Seguridad\\V1\\Rest\\Tropch\\TropchResource' => 'Seguridad\\V1\\Rest\\Tropch\\TropchResourceFactory',
+            'Seguridad\\V1\\Rest\\Trperd\\TrperdResource' => 'Seguridad\\V1\\Rest\\Trperd\\TrperdResourceFactory',
+            'Seguridad\\V1\\Rest\\Trpref\\TrprefResource' => 'Seguridad\\V1\\Rest\\Trpref\\TrprefResourceFactory',
+            'Seguridad\\V1\\Rest\\Trpriv\\TrprivResource' => 'Seguridad\\V1\\Rest\\Trpriv\\TrprivResourceFactory',
+            'Seguridad\\V1\\Rest\\Trreer\\TrreerResource' => 'Seguridad\\V1\\Rest\\Trreer\\TrreerResourceFactory',
+            'Seguridad\\V1\\Rest\\Trtabd\\TrtabdResource' => 'Seguridad\\V1\\Rest\\Trtabd\\TrtabdResourceFactory',
+            'Seguridad\\V1\\Rest\\Trtabh\\TrtabhResource' => 'Seguridad\\V1\\Rest\\Trtabh\\TrtabhResourceFactory',
+        ),
+    ),
+    'router' => array(
+        'routes' => array(
+            'seguridad.rest.trusua' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trusua[/:trusua_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trusua\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trperf' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trperf' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trperf[/:trperf_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trperf\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trmodl' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trmodl' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trmodl[/:trmodl_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trmodl\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trcias' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trcias' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trcias[/:trcias_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trcias\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trappm' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trappm' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trappm[/:trappm_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trappm\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trayud' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trayud' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trayud[/:trayud_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trayud\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trayuh' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trayuh' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trayuh[/:trayuh_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trayuh\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trcosi' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trcosi' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trcosi[/:trcosi_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trcosi\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trdepr' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trdepr' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trdepr[/:trdepr_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trdepr\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trdife' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trdife' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trdife[/:trdife_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trdife\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trdipo' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trdipo' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trdipo[/:trdipo_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trdipo\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.tresod' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.tresod' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/tresod[/:tresod_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Tresod\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.tresoh' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.tresoh' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/tresoh[/:tresoh_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Tresoh\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trhcos' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trhcos' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trhcos[/:trhcos_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trhcos\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trhpad' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trhpad' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trhpad[/:trhpad_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trhpad\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trhpah' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trhpah' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trhpah[/:trhpah_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trhpah\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trhpam' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trhpam' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trhpam[/:trhpam_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trhpam\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trmset' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trmset' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trmset[/:trmset_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trmset\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trmsus' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trmsus' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trmsus[/:trmsus_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trmsus\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.tropcd' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.tropcd' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/tropcd[/:tropcd_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Tropcd\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.tropch' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.tropch' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/tropch[/:tropch_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Tropch\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trperd' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trperd' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trperd[/:trperd_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trperd\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trpref' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trpref' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trpref[/:trpref_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trpref\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trpriv' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trpriv' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trpriv[/:trpriv_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trpriv\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trreer' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trreer' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trreer[/:trreer_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trreer\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trtabd' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trtabd' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trtabd[/:trtabd_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trtabd\\Controller',
-                    ],
-                ],
-            ],
-            'seguridad.rest.trtabh' => [
+                    ),
+                ),
+            ),
+            'seguridad.rest.trtabh' => array(
                 'type' => 'Segment',
-                'options' => [
+                'options' => array(
                     'route' => '/trtabh[/:trtabh_id]',
-                    'defaults' => [
+                    'defaults' => array(
                         'controller' => 'Seguridad\\V1\\Rest\\Trtabh\\Controller',
-                    ],
-                ],
-            ],
-        ],
-    ],
-    'zf-versioning' => [
-        'uri' => [
+                    ),
+                ),
+            ),
+        ),
+    ),
+    'zf-versioning' => array(
+        'uri' => array(
             0 => 'seguridad.rest.trusua',
             1 => 'seguridad.rest.trperf',
             4 => 'seguridad.rest.trmodl',
@@ -364,609 +363,609 @@ return [
             26 => 'seguridad.rest.trreer',
             27 => 'seguridad.rest.trtabd',
             28 => 'seguridad.rest.trtabh',
-        ],
-    ],
-    'zf-rest' => [
-        'Seguridad\\V1\\Rest\\Trusua\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trusua\TrusuaResource::class,
+        ),
+    ),
+    'zf-rest' => array(
+        'Seguridad\\V1\\Rest\\Trusua\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trusua\\TrusuaResource',
             'route_name' => 'seguridad.rest.trusua',
             'route_identifier_name' => 'trusua_id',
             'collection_name' => 'trusua',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trusua\TrusuaEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trusua\TrusuaCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trusua\\TrusuaEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trusua\\TrusuaCollection',
             'service_name' => 'Trusua',
-        ],
-        'Seguridad\\V1\\Rest\\Trperf\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trperf\TrperfResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trperf\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trperf\\TrperfResource',
             'route_name' => 'seguridad.rest.trperf',
             'route_identifier_name' => 'trperf_id',
             'collection_name' => 'trperf',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trperf\TrperfEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trperf\TrperfCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trperf\\TrperfEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trperf\\TrperfCollection',
             'service_name' => 'Trperf',
-        ],
-        'Seguridad\\V1\\Rest\\Trmodl\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trmodl\TrmodlResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trmodl\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trmodl\\TrmodlResource',
             'route_name' => 'seguridad.rest.trmodl',
             'route_identifier_name' => 'trmodl_id',
             'collection_name' => 'trmodl',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trmodl\TrmodlEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trmodl\TrmodlCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trmodl\\TrmodlEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trmodl\\TrmodlCollection',
             'service_name' => 'Trmodl',
-        ],
-        'Seguridad\\V1\\Rest\\Trcias\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trcias\TrciasResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trcias\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trcias\\TrciasResource',
             'route_name' => 'seguridad.rest.trcias',
             'route_identifier_name' => 'trcias_id',
             'collection_name' => 'trcias',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trcias\TrciasEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trcias\TrciasCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trcias\\TrciasEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trcias\\TrciasCollection',
             'service_name' => 'Trcias',
-        ],
-        'Seguridad\\V1\\Rest\\Trappm\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trappm\TrappmResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trappm\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trappm\\TrappmResource',
             'route_name' => 'seguridad.rest.trappm',
             'route_identifier_name' => 'trappm_id',
             'collection_name' => 'trappm',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trappm\TrappmEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trappm\TrappmCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trappm\\TrappmEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trappm\\TrappmCollection',
             'service_name' => 'Trappm',
-        ],
-        'Seguridad\\V1\\Rest\\Trayud\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trayud\TrayudResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trayud\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trayud\\TrayudResource',
             'route_name' => 'seguridad.rest.trayud',
             'route_identifier_name' => 'trayud_id',
             'collection_name' => 'trayud',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trayud\TrayudEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trayud\TrayudCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trayud\\TrayudEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trayud\\TrayudCollection',
             'service_name' => 'Trayud',
-        ],
-        'Seguridad\\V1\\Rest\\Trayuh\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trayuh\TrayuhResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trayuh\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trayuh\\TrayuhResource',
             'route_name' => 'seguridad.rest.trayuh',
             'route_identifier_name' => 'trayuh_id',
             'collection_name' => 'trayuh',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trayuh\TrayuhEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trayuh\TrayuhCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trayuh\\TrayuhEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trayuh\\TrayuhCollection',
             'service_name' => 'Trayuh',
-        ],
-        'Seguridad\\V1\\Rest\\Trcosi\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trcosi\TrcosiResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trcosi\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trcosi\\TrcosiResource',
             'route_name' => 'seguridad.rest.trcosi',
             'route_identifier_name' => 'trcosi_id',
             'collection_name' => 'trcosi',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trcosi\TrcosiEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trcosi\TrcosiCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trcosi\\TrcosiEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trcosi\\TrcosiCollection',
             'service_name' => 'Trcosi',
-        ],
-        'Seguridad\\V1\\Rest\\Trdepr\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trdepr\TrdeprResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trdepr\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trdepr\\TrdeprResource',
             'route_name' => 'seguridad.rest.trdepr',
             'route_identifier_name' => 'trdepr_id',
             'collection_name' => 'trdepr',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trdepr\TrdeprEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trdepr\TrdeprCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trdepr\\TrdeprEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trdepr\\TrdeprCollection',
             'service_name' => 'Trdepr',
-        ],
-        'Seguridad\\V1\\Rest\\Trdife\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trdife\TrdifeResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trdife\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trdife\\TrdifeResource',
             'route_name' => 'seguridad.rest.trdife',
             'route_identifier_name' => 'trdife_id',
             'collection_name' => 'trdife',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trdife\TrdifeEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trdife\TrdifeCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trdife\\TrdifeEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trdife\\TrdifeCollection',
             'service_name' => 'Trdife',
-        ],
-        'Seguridad\\V1\\Rest\\Trdipo\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trdipo\TrdipoResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trdipo\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trdipo\\TrdipoResource',
             'route_name' => 'seguridad.rest.trdipo',
             'route_identifier_name' => 'trdipo_id',
             'collection_name' => 'trdipo',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trdipo\TrdipoEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trdipo\TrdipoCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trdipo\\TrdipoEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trdipo\\TrdipoCollection',
             'service_name' => 'Trdipo',
-        ],
-        'Seguridad\\V1\\Rest\\Tresod\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Tresod\TresodResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Tresod\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Tresod\\TresodResource',
             'route_name' => 'seguridad.rest.tresod',
             'route_identifier_name' => 'tresod_id',
             'collection_name' => 'tresod',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Tresod\TresodEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Tresod\TresodCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Tresod\\TresodEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Tresod\\TresodCollection',
             'service_name' => 'Tresod',
-        ],
-        'Seguridad\\V1\\Rest\\Tresoh\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Tresoh\TresohResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Tresoh\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Tresoh\\TresohResource',
             'route_name' => 'seguridad.rest.tresoh',
             'route_identifier_name' => 'tresoh_id',
             'collection_name' => 'tresoh',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Tresoh\TresohEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Tresoh\TresohCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Tresoh\\TresohEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Tresoh\\TresohCollection',
             'service_name' => 'Tresoh',
-        ],
-        'Seguridad\\V1\\Rest\\Trhcos\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trhcos\TrhcosResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trhcos\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trhcos\\TrhcosResource',
             'route_name' => 'seguridad.rest.trhcos',
             'route_identifier_name' => 'trhcos_id',
             'collection_name' => 'trhcos',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trhcos\TrhcosEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trhcos\TrhcosCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trhcos\\TrhcosEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trhcos\\TrhcosCollection',
             'service_name' => 'Trhcos',
-        ],
-        'Seguridad\\V1\\Rest\\Trhpad\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trhpad\TrhpadResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trhpad\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trhpad\\TrhpadResource',
             'route_name' => 'seguridad.rest.trhpad',
             'route_identifier_name' => 'trhpad_id',
             'collection_name' => 'trhpad',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trhpad\TrhpadEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trhpad\TrhpadCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trhpad\\TrhpadEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trhpad\\TrhpadCollection',
             'service_name' => 'Trhpad',
-        ],
-        'Seguridad\\V1\\Rest\\Trhpah\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trhpah\TrhpahResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trhpah\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trhpah\\TrhpahResource',
             'route_name' => 'seguridad.rest.trhpah',
             'route_identifier_name' => 'trhpah_id',
             'collection_name' => 'trhpah',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trhpah\TrhpahEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trhpah\TrhpahCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trhpah\\TrhpahEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trhpah\\TrhpahCollection',
             'service_name' => 'Trhpah',
-        ],
-        'Seguridad\\V1\\Rest\\Trhpam\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trhpam\TrhpamResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trhpam\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trhpam\\TrhpamResource',
             'route_name' => 'seguridad.rest.trhpam',
             'route_identifier_name' => 'trhpam_id',
             'collection_name' => 'trhpam',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trhpam\TrhpamEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trhpam\TrhpamCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trhpam\\TrhpamEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trhpam\\TrhpamCollection',
             'service_name' => 'Trhpam',
-        ],
-        'Seguridad\\V1\\Rest\\Trmset\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trmset\TrmsetResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trmset\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trmset\\TrmsetResource',
             'route_name' => 'seguridad.rest.trmset',
             'route_identifier_name' => 'trmset_id',
             'collection_name' => 'trmset',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trmset\TrmsetEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trmset\TrmsetCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trmset\\TrmsetEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trmset\\TrmsetCollection',
             'service_name' => 'Trmset',
-        ],
-        'Seguridad\\V1\\Rest\\Trmsus\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trmsus\TrmsusResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trmsus\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trmsus\\TrmsusResource',
             'route_name' => 'seguridad.rest.trmsus',
             'route_identifier_name' => 'trmsus_id',
             'collection_name' => 'trmsus',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trmsus\TrmsusEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trmsus\TrmsusCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trmsus\\TrmsusEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trmsus\\TrmsusCollection',
             'service_name' => 'Trmsus',
-        ],
-        'Seguridad\\V1\\Rest\\Tropcd\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Tropcd\TropcdResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Tropcd\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Tropcd\\TropcdResource',
             'route_name' => 'seguridad.rest.tropcd',
             'route_identifier_name' => 'tropcd_id',
             'collection_name' => 'tropcd',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Tropcd\TropcdEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Tropcd\TropcdCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Tropcd\\TropcdEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Tropcd\\TropcdCollection',
             'service_name' => 'Tropcd',
-        ],
-        'Seguridad\\V1\\Rest\\Tropch\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Tropch\TropchResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Tropch\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Tropch\\TropchResource',
             'route_name' => 'seguridad.rest.tropch',
             'route_identifier_name' => 'tropch_id',
             'collection_name' => 'tropch',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Tropch\TropchEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Tropch\TropchCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Tropch\\TropchEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Tropch\\TropchCollection',
             'service_name' => 'Tropch',
-        ],
-        'Seguridad\\V1\\Rest\\Trperd\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trperd\TrperdResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trperd\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trperd\\TrperdResource',
             'route_name' => 'seguridad.rest.trperd',
             'route_identifier_name' => 'trperd_id',
             'collection_name' => 'trperd',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trperd\TrperdEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trperd\TrperdCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trperd\\TrperdEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trperd\\TrperdCollection',
             'service_name' => 'Trperd',
-        ],
-        'Seguridad\\V1\\Rest\\Trpref\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trpref\TrprefResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trpref\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trpref\\TrprefResource',
             'route_name' => 'seguridad.rest.trpref',
             'route_identifier_name' => 'trpref_id',
             'collection_name' => 'trpref',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trpref\TrprefEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trpref\TrprefCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trpref\\TrprefEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trpref\\TrprefCollection',
             'service_name' => 'Trpref',
-        ],
-        'Seguridad\\V1\\Rest\\Trpriv\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trpriv\TrprivResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trpriv\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trpriv\\TrprivResource',
             'route_name' => 'seguridad.rest.trpriv',
             'route_identifier_name' => 'trpriv_id',
             'collection_name' => 'trpriv',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trpriv\TrprivEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trpriv\TrprivCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trpriv\\TrprivEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trpriv\\TrprivCollection',
             'service_name' => 'Trpriv',
-        ],
-        'Seguridad\\V1\\Rest\\Trreer\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trreer\TrreerResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trreer\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trreer\\TrreerResource',
             'route_name' => 'seguridad.rest.trreer',
             'route_identifier_name' => 'trreer_id',
             'collection_name' => 'trreer',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trreer\TrreerEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trreer\TrreerCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trreer\\TrreerEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trreer\\TrreerCollection',
             'service_name' => 'Trreer',
-        ],
-        'Seguridad\\V1\\Rest\\Trtabd\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trtabd\TrtabdResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trtabd\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trtabd\\TrtabdResource',
             'route_name' => 'seguridad.rest.trtabd',
             'route_identifier_name' => 'trtabd_id',
             'collection_name' => 'trtabd',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trtabd\TrtabdEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trtabd\TrtabdCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trtabd\\TrtabdEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trtabd\\TrtabdCollection',
             'service_name' => 'Trtabd',
-        ],
-        'Seguridad\\V1\\Rest\\Trtabh\\Controller' => [
-            'listener' => \Seguridad\V1\Rest\Trtabh\TrtabhResource::class,
+        ),
+        'Seguridad\\V1\\Rest\\Trtabh\\Controller' => array(
+            'listener' => 'Seguridad\\V1\\Rest\\Trtabh\\TrtabhResource',
             'route_name' => 'seguridad.rest.trtabh',
             'route_identifier_name' => 'trtabh_id',
             'collection_name' => 'trtabh',
-            'entity_http_methods' => [
+            'entity_http_methods' => array(
                 0 => 'GET',
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
-            ],
-            'collection_http_methods' => [
+            ),
+            'collection_http_methods' => array(
                 0 => 'GET',
                 1 => 'POST',
-            ],
-            'collection_query_whitelist' => [],
+            ),
+            'collection_query_whitelist' => array(),
             'page_size' => 25,
             'page_size_param' => null,
-            'entity_class' => \Seguridad\V1\Rest\Trtabh\TrtabhEntity::class,
-            'collection_class' => \Seguridad\V1\Rest\Trtabh\TrtabhCollection::class,
+            'entity_class' => 'Seguridad\\V1\\Rest\\Trtabh\\TrtabhEntity',
+            'collection_class' => 'Seguridad\\V1\\Rest\\Trtabh\\TrtabhCollection',
             'service_name' => 'Trtabh',
-        ],
-    ],
-    'zf-content-negotiation' => [
-        'controllers' => [
-            'Seguridad\\V1\\Rest\\Trusua\\Controller' => 'HalJson',
+        ),
+    ),
+    'zf-content-negotiation' => array(
+        'controllers' => array(
+            'Seguridad\\V1\\Rest\\Trusua\\Controller' => 'Json',
             'Seguridad\\V1\\Rest\\Trperf\\Controller' => 'HalJson',
-            'Seguridad\\V1\\Rest\\Trmodl\\Controller' => 'HalJson',
+            'Seguridad\\V1\\Rest\\Trmodl\\Controller' => 'Json',
             'Seguridad\\V1\\Rest\\Trcias\\Controller' => 'HalJson',
             'Seguridad\\V1\\Rest\\Trappm\\Controller' => 'HalJson',
             'Seguridad\\V1\\Rest\\Trayud\\Controller' => 'HalJson',
@@ -991,3479 +990,3479 @@ return [
             'Seguridad\\V1\\Rest\\Trreer\\Controller' => 'HalJson',
             'Seguridad\\V1\\Rest\\Trtabd\\Controller' => 'HalJson',
             'Seguridad\\V1\\Rest\\Trtabh\\Controller' => 'HalJson',
-        ],
-        'accept_whitelist' => [
-            'Seguridad\\V1\\Rest\\Trusua\\Controller' => [
+        ),
+        'accept_whitelist' => array(
+            'Seguridad\\V1\\Rest\\Trusua\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trperf\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trperf\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trmodl\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trmodl\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trcias\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trcias\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trappm\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trappm\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trayud\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trayud\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trayuh\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trayuh\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trcosi\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trcosi\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trdepr\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trdepr\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trdife\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trdife\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trdipo\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trdipo\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Tresod\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Tresod\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Tresoh\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Tresoh\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trhcos\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhcos\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trhpad\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhpad\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trhpah\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhpah\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trhpam\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhpam\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trmset\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trmset\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trmsus\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trmsus\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Tropcd\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Tropcd\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Tropch\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Tropch\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trperd\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trperd\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trpref\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trpref\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trpriv\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trpriv\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trreer\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trreer\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trtabd\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trtabd\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trtabh\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trtabh\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/hal+json',
                 2 => 'application/json',
-            ],
-        ],
-        'content_type_whitelist' => [
-            'Seguridad\\V1\\Rest\\Trusua\\Controller' => [
+            ),
+        ),
+        'content_type_whitelist' => array(
+            'Seguridad\\V1\\Rest\\Trusua\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trperf\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trperf\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trmodl\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trmodl\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trcias\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trcias\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trappm\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trappm\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trayud\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trayud\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trayuh\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trayuh\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trcosi\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trcosi\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trdepr\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trdepr\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trdife\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trdife\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trdipo\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trdipo\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Tresod\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Tresod\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Tresoh\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Tresoh\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trhcos\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhcos\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trhpad\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhpad\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trhpah\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhpah\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trhpam\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhpam\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trmset\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trmset\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trmsus\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trmsus\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Tropcd\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Tropcd\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Tropch\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Tropch\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trperd\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trperd\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trpref\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trpref\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trpriv\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trpriv\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trreer\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trreer\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trtabd\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trtabd\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-            'Seguridad\\V1\\Rest\\Trtabh\\Controller' => [
+            ),
+            'Seguridad\\V1\\Rest\\Trtabh\\Controller' => array(
                 0 => 'application/vnd.seguridad.v1+json',
                 1 => 'application/json',
-            ],
-        ],
-    ],
-    'zf-hal' => [
-        'metadata_map' => [
-            \Seguridad\V1\Rest\Trusua\TrusuaEntity::class => [
+            ),
+        ),
+    ),
+    'zf-hal' => array(
+        'metadata_map' => array(
+            'Seguridad\\V1\\Rest\\Trusua\\TrusuaEntity' => array(
                 'entity_identifier_name' => 'russecu',
                 'route_name' => 'seguridad.rest.trusua',
                 'route_identifier_name' => 'trusua_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trusua\TrusuaCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trusua\\TrusuaCollection' => array(
                 'entity_identifier_name' => 'russecu',
                 'route_name' => 'seguridad.rest.trusua',
                 'route_identifier_name' => 'trusua_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trperf\TrperfEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trperf\\TrperfEntity' => array(
                 'entity_identifier_name' => 'rpesecu',
                 'route_name' => 'seguridad.rest.trperf',
                 'route_identifier_name' => 'trperf_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trperf\TrperfCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trperf\\TrperfCollection' => array(
                 'entity_identifier_name' => 'rpesecu',
                 'route_name' => 'seguridad.rest.trperf',
                 'route_identifier_name' => 'trperf_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trmodl\TrmodlEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trmodl\\TrmodlEntity' => array(
                 'entity_identifier_name' => 'rmosecu',
                 'route_name' => 'seguridad.rest.trmodl',
                 'route_identifier_name' => 'trmodl_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trmodl\TrmodlCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trmodl\\TrmodlCollection' => array(
                 'entity_identifier_name' => 'rmosecu',
                 'route_name' => 'seguridad.rest.trmodl',
                 'route_identifier_name' => 'trmodl_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trcias\TrciasEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trcias\\TrciasEntity' => array(
                 'entity_identifier_name' => 'bcisecu',
                 'route_name' => 'seguridad.rest.trcias',
                 'route_identifier_name' => 'trcias_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trcias\TrciasCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trcias\\TrciasCollection' => array(
                 'entity_identifier_name' => 'bcisecu',
                 'route_name' => 'seguridad.rest.trcias',
                 'route_identifier_name' => 'trcias_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trappm\TrappmEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trappm\\TrappmEntity' => array(
                 'entity_identifier_name' => 'rapsecu',
                 'route_name' => 'seguridad.rest.trappm',
                 'route_identifier_name' => 'trappm_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trappm\TrappmCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trappm\\TrappmCollection' => array(
                 'entity_identifier_name' => 'rapsecu',
                 'route_name' => 'seguridad.rest.trappm',
                 'route_identifier_name' => 'trappm_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trayud\TrayudEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trayud\\TrayudEntity' => array(
                 'entity_identifier_name' => 'radsecu',
                 'route_name' => 'seguridad.rest.trayud',
                 'route_identifier_name' => 'trayud_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trayud\TrayudCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trayud\\TrayudCollection' => array(
                 'entity_identifier_name' => 'radsecu',
                 'route_name' => 'seguridad.rest.trayud',
                 'route_identifier_name' => 'trayud_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trayuh\TrayuhEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trayuh\\TrayuhEntity' => array(
                 'entity_identifier_name' => 'rahsecu',
                 'route_name' => 'seguridad.rest.trayuh',
                 'route_identifier_name' => 'trayuh_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trayuh\TrayuhCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trayuh\\TrayuhCollection' => array(
                 'entity_identifier_name' => 'rahsecu',
                 'route_name' => 'seguridad.rest.trayuh',
                 'route_identifier_name' => 'trayuh_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trcosi\TrcosiEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trcosi\\TrcosiEntity' => array(
                 'entity_identifier_name' => 'rcosecu',
                 'route_name' => 'seguridad.rest.trcosi',
                 'route_identifier_name' => 'trcosi_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trcosi\TrcosiCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trcosi\\TrcosiCollection' => array(
                 'entity_identifier_name' => 'rcosecu',
                 'route_name' => 'seguridad.rest.trcosi',
                 'route_identifier_name' => 'trcosi_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trdepr\TrdeprEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trdepr\\TrdeprEntity' => array(
                 'entity_identifier_name' => 'rdpsecu',
                 'route_name' => 'seguridad.rest.trdepr',
                 'route_identifier_name' => 'trdepr_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trdepr\TrdeprCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trdepr\\TrdeprCollection' => array(
                 'entity_identifier_name' => 'rdpsecu',
                 'route_name' => 'seguridad.rest.trdepr',
                 'route_identifier_name' => 'trdepr_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trdife\TrdifeEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trdife\\TrdifeEntity' => array(
                 'entity_identifier_name' => 'rcosec1',
                 'route_name' => 'seguridad.rest.trdife',
                 'route_identifier_name' => 'trdife_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trdife\TrdifeCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trdife\\TrdifeCollection' => array(
                 'entity_identifier_name' => 'rcosec1',
                 'route_name' => 'seguridad.rest.trdife',
                 'route_identifier_name' => 'trdife_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trdipo\TrdipoEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trdipo\\TrdipoEntity' => array(
                 'entity_identifier_name' => 'rdisecu',
                 'route_name' => 'seguridad.rest.trdipo',
                 'route_identifier_name' => 'trdipo_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trdipo\TrdipoCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trdipo\\TrdipoCollection' => array(
                 'entity_identifier_name' => 'rdisecu',
                 'route_name' => 'seguridad.rest.trdipo',
                 'route_identifier_name' => 'trdipo_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Tresod\TresodEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Tresod\\TresodEntity' => array(
                 'entity_identifier_name' => 'redsecu',
                 'route_name' => 'seguridad.rest.tresod',
                 'route_identifier_name' => 'tresod_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Tresod\TresodCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Tresod\\TresodCollection' => array(
                 'entity_identifier_name' => 'redsecu',
                 'route_name' => 'seguridad.rest.tresod',
                 'route_identifier_name' => 'tresod_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Tresoh\TresohEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Tresoh\\TresohEntity' => array(
                 'entity_identifier_name' => 'rehsecu',
                 'route_name' => 'seguridad.rest.tresoh',
                 'route_identifier_name' => 'tresoh_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Tresoh\TresohCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Tresoh\\TresohCollection' => array(
                 'entity_identifier_name' => 'rehsecu',
                 'route_name' => 'seguridad.rest.tresoh',
                 'route_identifier_name' => 'tresoh_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trhcos\TrhcosEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhcos\\TrhcosEntity' => array(
                 'entity_identifier_name' => 'rhcsecu',
                 'route_name' => 'seguridad.rest.trhcos',
                 'route_identifier_name' => 'trhcos_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trhcos\TrhcosCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trhcos\\TrhcosCollection' => array(
                 'entity_identifier_name' => 'rhcsecu',
                 'route_name' => 'seguridad.rest.trhcos',
                 'route_identifier_name' => 'trhcos_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trhpad\TrhpadEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhpad\\TrhpadEntity' => array(
                 'entity_identifier_name' => 'rhdsecu',
                 'route_name' => 'seguridad.rest.trhpad',
                 'route_identifier_name' => 'trhpad_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trhpad\TrhpadCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trhpad\\TrhpadCollection' => array(
                 'entity_identifier_name' => 'rhdsecu',
                 'route_name' => 'seguridad.rest.trhpad',
                 'route_identifier_name' => 'trhpad_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trhpah\TrhpahEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhpah\\TrhpahEntity' => array(
                 'entity_identifier_name' => 'rhhsecu',
                 'route_name' => 'seguridad.rest.trhpah',
                 'route_identifier_name' => 'trhpah_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trhpah\TrhpahCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trhpah\\TrhpahCollection' => array(
                 'entity_identifier_name' => 'rhhsecu',
                 'route_name' => 'seguridad.rest.trhpah',
                 'route_identifier_name' => 'trhpah_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trhpam\TrhpamEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trhpam\\TrhpamEntity' => array(
                 'entity_identifier_name' => 'rhmsecu',
                 'route_name' => 'seguridad.rest.trhpam',
                 'route_identifier_name' => 'trhpam_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trhpam\TrhpamCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trhpam\\TrhpamCollection' => array(
                 'entity_identifier_name' => 'rhmsecu',
                 'route_name' => 'seguridad.rest.trhpam',
                 'route_identifier_name' => 'trhpam_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trmset\TrmsetEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trmset\\TrmsetEntity' => array(
                 'entity_identifier_name' => 'rmesecu',
                 'route_name' => 'seguridad.rest.trmset',
                 'route_identifier_name' => 'trmset_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trmset\TrmsetCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trmset\\TrmsetCollection' => array(
                 'entity_identifier_name' => 'rmesecu',
                 'route_name' => 'seguridad.rest.trmset',
                 'route_identifier_name' => 'trmset_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trmsus\TrmsusEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trmsus\\TrmsusEntity' => array(
                 'entity_identifier_name' => 'rmssecu',
                 'route_name' => 'seguridad.rest.trmsus',
                 'route_identifier_name' => 'trmsus_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trmsus\TrmsusCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trmsus\\TrmsusCollection' => array(
                 'entity_identifier_name' => 'rmssecu',
                 'route_name' => 'seguridad.rest.trmsus',
                 'route_identifier_name' => 'trmsus_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Tropcd\TropcdEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Tropcd\\TropcdEntity' => array(
                 'entity_identifier_name' => 'rpasec2',
                 'route_name' => 'seguridad.rest.tropcd',
                 'route_identifier_name' => 'tropcd_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Tropcd\TropcdCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Tropcd\\TropcdCollection' => array(
                 'entity_identifier_name' => 'rpasec2',
                 'route_name' => 'seguridad.rest.tropcd',
                 'route_identifier_name' => 'tropcd_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Tropch\TropchEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Tropch\\TropchEntity' => array(
                 'entity_identifier_name' => 'rnosecu',
                 'route_name' => 'seguridad.rest.tropch',
                 'route_identifier_name' => 'tropch_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Tropch\TropchCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Tropch\\TropchCollection' => array(
                 'entity_identifier_name' => 'rnosecu',
                 'route_name' => 'seguridad.rest.tropch',
                 'route_identifier_name' => 'tropch_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trperd\TrperdEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trperd\\TrperdEntity' => array(
                 'entity_identifier_name' => 'rrdsecu',
                 'route_name' => 'seguridad.rest.trperd',
                 'route_identifier_name' => 'trperd_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trperd\TrperdCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trperd\\TrperdCollection' => array(
                 'entity_identifier_name' => 'rrdsecu',
                 'route_name' => 'seguridad.rest.trperd',
                 'route_identifier_name' => 'trperd_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trpref\TrprefEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trpref\\TrprefEntity' => array(
                 'entity_identifier_name' => 'rpfsesu',
                 'route_name' => 'seguridad.rest.trpref',
                 'route_identifier_name' => 'trpref_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trpref\TrprefCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trpref\\TrprefCollection' => array(
                 'entity_identifier_name' => 'rpfsesu',
                 'route_name' => 'seguridad.rest.trpref',
                 'route_identifier_name' => 'trpref_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trpriv\TrprivEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trpriv\\TrprivEntity' => array(
                 'entity_identifier_name' => 'rprsecu',
                 'route_name' => 'seguridad.rest.trpriv',
                 'route_identifier_name' => 'trpriv_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trpriv\TrprivCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trpriv\\TrprivCollection' => array(
                 'entity_identifier_name' => 'rprsecu',
                 'route_name' => 'seguridad.rest.trpriv',
                 'route_identifier_name' => 'trpriv_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trreer\TrreerEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trreer\\TrreerEntity' => array(
                 'entity_identifier_name' => 'rresecu',
                 'route_name' => 'seguridad.rest.trreer',
                 'route_identifier_name' => 'trreer_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trreer\TrreerCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trreer\\TrreerCollection' => array(
                 'entity_identifier_name' => 'rresecu',
                 'route_name' => 'seguridad.rest.trreer',
                 'route_identifier_name' => 'trreer_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trtabd\TrtabdEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trtabd\\TrtabdEntity' => array(
                 'entity_identifier_name' => 'rtbsecu',
                 'route_name' => 'seguridad.rest.trtabd',
                 'route_identifier_name' => 'trtabd_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trtabd\TrtabdCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trtabd\\TrtabdCollection' => array(
                 'entity_identifier_name' => 'rtbsecu',
                 'route_name' => 'seguridad.rest.trtabd',
                 'route_identifier_name' => 'trtabd_id',
                 'is_collection' => true,
-            ],
-            \Seguridad\V1\Rest\Trtabh\TrtabhEntity::class => [
+            ),
+            'Seguridad\\V1\\Rest\\Trtabh\\TrtabhEntity' => array(
                 'entity_identifier_name' => 'rtbsec1',
                 'route_name' => 'seguridad.rest.trtabh',
                 'route_identifier_name' => 'trtabh_id',
-                'hydrator' => \Zend\Hydrator\ArraySerializable::class,
-            ],
-            \Seguridad\V1\Rest\Trtabh\TrtabhCollection::class => [
+                'hydrator' => 'Zend\\Hydrator\\ArraySerializable',
+            ),
+            'Seguridad\\V1\\Rest\\Trtabh\\TrtabhCollection' => array(
                 'entity_identifier_name' => 'rtbsec1',
                 'route_name' => 'seguridad.rest.trtabh',
                 'route_identifier_name' => 'trtabh_id',
                 'is_collection' => true,
-            ],
-        ],
-    ],
-    'zf-content-validation' => [
-        'Seguridad\\V1\\Rest\\Trusua\\Controller' => [
+            ),
+        ),
+    ),
+    'zf-content-validation' => array(
+        'Seguridad\\V1\\Rest\\Trusua\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trusua\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trperf\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trperf\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trperf\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trmodl\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trmodl\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trmodl\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trcias\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trcias\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trcias\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trappm\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trappm\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trappm\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trayud\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trayud\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trayud\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trayuh\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trayuh\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trayuh\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trcosi\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trcosi\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trcosi\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trdepr\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trdepr\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trdepr\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trdife\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trdife\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trdife\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trdipo\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trdipo\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trdipo\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Tresod\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Tresod\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Tresod\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Tresoh\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Tresoh\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Tresoh\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trhcos\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trhcos\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trhcos\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trhpad\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trhpad\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trhpad\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trhpah\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trhpah\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trhpah\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trhpam\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trhpam\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trhpam\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trmset\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trmset\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trmset\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trmsus\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trmsus\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trmsus\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Tropcd\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Tropcd\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Tropcd\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Tropch\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Tropch\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Tropch\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trperd\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trperd\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trperd\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trpref\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trpref\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trpref\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trpriv\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trpriv\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trpriv\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trreer\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trreer\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trreer\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trtabd\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trtabd\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trtabd\\Validator',
-        ],
-        'Seguridad\\V1\\Rest\\Trtabh\\Controller' => [
+        ),
+        'Seguridad\\V1\\Rest\\Trtabh\\Controller' => array(
             'input_filter' => 'Seguridad\\V1\\Rest\\Trtabh\\Validator',
-        ],
-    ],
-    'input_filter_specs' => [
-        'Seguridad\\V1\\Rest\\Trusua\\Validator' => [
-            0 => [
+        ),
+    ),
+    'input_filter_specs' => array(
+        'Seguridad\\V1\\Rest\\Trusua\\Validator' => array(
+            0 => array(
                 'required' => false,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'russecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Usuarios del Sistema',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpesecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Perfiles de Usuarios',
                 'field_type' => 'integer',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rusucod',
                 'description' => 'Nombre de Usuario',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rusucve',
                 'field_type' => 'string',
                 'description' => 'Clave de Usuario',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rusunom',
                 'description' => 'Nombre de Usuario',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rusumai',
                 'description' => 'E-mail del Usuario',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rusuest',
                 'description' => 'Estado del Usuario',
                 'field_type' => 'integer',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rusufec',
                 'description' => 'Fecha de Registro del Usuario',
                 'field_type' => 'date',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rusucad',
                 'description' => 'Fecha Caducidad del Usuario',
                 'field_type' => 'date',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trperf\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trperf\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpesecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Perfiles de Usuarios',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpecodi',
                 'description' => 'Codigo de Perfil',
                 'field_type' => 'string',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Nombre del Perfil',
                 'name' => 'rpenomb',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rpeparm',
                 'description' => 'Parametros del Perfil',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trmodl\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trmodl\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmosecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Modulos',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'trm_rmosecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Modulos',
                 'field_type' => 'integer',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rmocodi',
                 'description' => 'Codigo del Modulo',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmocola',
                 'description' => 'Codigo Largo',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmoesno',
                 'description' => 'Especificacion del Nombre',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmonomb',
                 'description' => 'Nombre de la Extension',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmoordi',
                 'description' => 'Ordinal de la Extension',
                 'field_type' => 'integer',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'integer',
                 'description' => 'Nivel de la Extension',
                 'name' => 'rmonive',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmoulni',
                 'description' => 'Bandera de Ultimo Nivel',
                 'field_type' => 'integer',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmodepu',
                 'description' => 'Modo de Depurar',
                 'field_type' => 'integer',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmoparm',
                 'description' => 'Parametros adicionales del Modulo',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmodeex',
                 'description' => 'Descripcion de la Extension',
                 'field_type' => 'string',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmoorde',
                 'description' => 'Orden especifico del Modulo',
                 'field_type' => 'integer',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmoesta',
                 'field_type' => 'integer',
                 'description' => 'Estado del Modulo',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trcias\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trcias\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Empresa',
                 'name' => 'bcisecu',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'mmcsecu',
                 'description' => 'Opcion: Maestro de Colaboradores',
                 'field_type' => 'integer',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciacve',
                 'description' => 'Codigo de Empresa',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'bcianom',
                 'description' => 'Nombre o Razon Social de la Empresa',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciadir',
                 'description' => 'Direccion de la Empresa',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Codigo Postal de la Empresa',
                 'name' => 'bciacpo',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciciud',
                 'description' => 'Ciudad de la Empresa',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'bciadis',
                 'description' => 'Distrito de la Empresa',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciapro',
                 'description' => 'Provincia de la Empresa',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciadpt',
                 'error_message' => 'Departamento de la Empresa',
                 'field_type' => 'string',
                 'description' => 'Departamento de la Empresa',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciapai',
                 'description' => 'Pais de la Empresa',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'bciaruc',
                 'description' => 'RUC de la Empresa',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciarf1',
                 'description' => 'Registro Fiscal 1 de la Empresa',
                 'field_type' => 'string',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Registro Fiscal 2 de la Empresa',
                 'name' => 'bciarf2',
-            ],
-            14 => [
+            ),
+            14 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Registro Fiscal 3 de la Empresa',
                 'name' => 'bciarf3',
                 'field_type' => 'string',
-            ],
-            15 => [
+            ),
+            15 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciarf4',
                 'description' => 'Registro Fiscal 4 de la Empresa',
                 'field_type' => 'string',
-            ],
-            16 => [
+            ),
+            16 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'bciarf5',
                 'description' => 'Registro Fiscal 5 de la Empresa',
-            ],
-            17 => [
+            ),
+            17 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciarf6',
                 'field_type' => 'string',
                 'description' => 'Registro Fiscal 6 de la Empresa',
-            ],
-            18 => [
+            ),
+            18 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciarf7',
                 'description' => 'Registro Fiscal 7 de la Empresa',
                 'field_type' => 'string',
-            ],
-            19 => [
+            ),
+            19 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciarf8',
                 'description' => 'Registro Fiscal 8 de la Empresa',
                 'field_type' => 'string',
-            ],
-            20 => [
+            ),
+            20 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciarf9',
                 'description' => 'Registro Fiscal 9 de la Empresa',
                 'field_type' => 'string',
-            ],
-            21 => [
+            ),
+            21 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciagir',
                 'description' => 'Giro o Actividad de la Empresa',
                 'field_type' => 'string',
-            ],
-            22 => [
+            ),
+            22 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bciadsn',
                 'description' => 'Nombre ODBC-DSN',
                 'field_type' => 'string',
-            ],
-            23 => [
+            ),
+            23 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Situacion de la Empresa',
                 'name' => 'bciasit',
                 'field_type' => 'integer',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trappm\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trappm\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rapsecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Acceso a Parametros por Modulo',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbsec1',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Parametros del Modulo',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmosecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Modulos',
                 'field_type' => 'integer',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rapcome',
                 'description' => 'Comentario',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rapdecr',
                 'description' => 'Derecho de Creacion del Parametro',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rapdele',
                 'description' => 'Derecho de Lectura del Parametro',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rapdeac',
                 'description' => 'Derecho de Actualizacion del Parametro',
                 'field_type' => 'integer',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rapdebo',
                 'description' => 'Derecho de Borrado del Parametro',
                 'field_type' => 'integer',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rapsitu',
                 'field_type' => 'integer',
                 'description' => 'Situacion',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trayud\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trayud\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radsecu',
                 'description' => 'Estos Datos se ingresan en la opcion: Ayuda del Sistema (Detalle)',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahsecu',
                 'field_type' => 'integer',
                 'description' => 'Estos Datos se ingresan en la opcion: Ayuda del Sistema (Cabecera)',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radfepr',
                 'description' => 'Fecha de Proceso',
                 'field_type' => 'date',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radceqp',
                 'description' => 'Codigo de Empresa que procesa',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radneqp',
                 'description' => 'Nombre de Empresa que procesa',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'radcuqp',
                 'description' => 'Cedula de Usuario que procesa',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Nombre de Usuario que procesa',
                 'name' => 'radnuqp',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radtda1',
                 'description' => 'Titulo de Ayuda 1',
                 'field_type' => 'string',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Descripcion de Ayuda 1',
                 'name' => 'raddda1',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radtda2',
                 'description' => 'Titulo de Ayuda 2',
                 'field_type' => 'string',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'raddda2',
                 'description' => 'Descripcion de Ayuda 2',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radtda3',
                 'description' => 'Titulo de Ayuda 3',
                 'field_type' => 'string',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'raddda3',
                 'description' => 'Descripion de Ayuda 3',
                 'field_type' => 'string',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Origen de la Ayuda (Combo:RRORIAYU de Parametros)',
                 'name' => 'radoray',
                 'field_type' => 'integer',
-            ],
-            14 => [
+            ),
+            14 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Diagnostico',
                 'name' => 'raddiag',
                 'field_type' => 'string',
-            ],
-            15 => [
+            ),
+            15 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radact1',
                 'description' => 'Accion tomada 1',
                 'field_type' => 'string',
-            ],
-            16 => [
+            ),
+            16 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Accion tomada 2',
                 'name' => 'radact2',
                 'field_type' => 'string',
-            ],
-            17 => [
+            ),
+            17 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radsima',
                 'description' => 'Situacion (Combo: RRSITMAN de Parametros)',
                 'field_type' => 'integer',
-            ],
-            18 => [
+            ),
+            18 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'radacpu',
                 'description' => 'Acceso Publico (Si/No)',
                 'field_type' => 'integer',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trayuh\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trayuh\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahsecu',
                 'description' => 'Estos Datos se ingresan en la opcion: Ayuda del Sistema (Cabecera)',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnosecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Menues y Opciones',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmosecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Modulos',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Fecha de Proceso',
                 'name' => 'rahfepr',
                 'field_type' => 'date',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahcoay',
                 'description' => 'Descripcion del Producto',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Titulo de Ayuda 1',
                 'name' => 'rahtda1',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahdda1',
                 'field_type' => 'string',
                 'description' => 'Descripcion de Ayuda 1',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rahpnv1',
                 'description' => 'Path y Nombre de Video 1',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rahtda2',
                 'description' => 'Titulo de Ayuda 2',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahdda2',
                 'description' => 'Descripcion de Ayuda 2',
                 'field_type' => 'string',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Path y Nombre de Video 2',
                 'name' => 'rahpnv2',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahtda3',
                 'description' => 'Titulo de Ayuda 3',
                 'field_type' => 'string',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Descripcion de Ayuda 3',
                 'name' => 'rahdda3',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahpnv3',
                 'description' => 'Path y Nombre de Video 3',
                 'field_type' => 'string',
-            ],
-            14 => [
+            ),
+            14 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Titulo de Ayuda 4',
                 'name' => 'rahtda4',
                 'field_type' => 'string',
-            ],
-            15 => [
+            ),
+            15 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahdda4',
                 'description' => 'Descripcion de Ayuda 4',
                 'field_type' => 'string',
-            ],
-            16 => [
+            ),
+            16 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Path y Nombre de Video 4',
                 'name' => 'rahpnv4',
                 'field_type' => 'string',
-            ],
-            17 => [
+            ),
+            17 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Titulo de Ayuda 5',
                 'name' => 'rahtda5',
                 'field_type' => 'string',
-            ],
-            18 => [
+            ),
+            18 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahdda5',
                 'description' => 'Descripcion de Ayuda 5',
                 'field_type' => 'string',
-            ],
-            19 => [
+            ),
+            19 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Path y Nombre de Video 5',
                 'name' => 'rahpnv5',
                 'field_type' => 'string',
-            ],
-            20 => [
+            ),
+            20 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rahayre',
                 'description' => 'Ayuda relacionada',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trcosi\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trcosi\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcosecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Constantes del Sistema',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmosecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Modulos',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Codigo de la Constante',
                 'name' => 'rcocodi',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rcovalo',
                 'description' => 'Valor Interno para Programacion',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcovagr',
                 'description' => 'Valor a desplegar en grilla',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Configuracion adicional para la creacion de Parametro',
                 'name' => 'rcoconf',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcodesc',
                 'description' => 'Descripcion de la Constante',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Tipo de Constante S=String,N=Numerico y D=DateTime',
                 'name' => 'rcotipo',
                 'field_type' => 'integer',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trdepr\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trdepr\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpsecu',
                 'description' => 'Opcion: Detalle de Procesos',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnosecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Menues y Opciones',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpnopr',
                 'description' => 'Nombre de Proceso',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rdpdepr',
                 'description' => 'Descripcion del Proceso',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Nombre del Aplicativo en siglas',
                 'name' => 'rdpnoap',
                 'field_type' => 'integer',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpexpr',
                 'field_type' => 'integer',
                 'description' => 'Extension propietaria del Proceso',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Extension relacionada con el Proceso',
                 'name' => 'rdpexre',
                 'field_type' => 'integer',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpacin',
                 'field_type' => 'string',
                 'description' => 'Actores que intervienen',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Referencias cruzadas',
                 'name' => 'rdprecr',
                 'field_type' => 'string',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Trigger',
                 'name' => 'rdptrig',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpprco',
                 'description' => 'Pre Condiciones',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Post Condiciones',
                 'name' => 'rdppoco',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpflno',
                 'description' => 'Flujo normal',
                 'field_type' => 'string',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Flujos alternativos',
                 'name' => 'rdpflal',
                 'field_type' => 'string',
-            ],
-            14 => [
+            ),
+            14 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpinad',
                 'description' => 'Inclusiones adicionales',
                 'field_type' => 'string',
-            ],
-            15 => [
+            ),
+            15 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpfrus',
                 'description' => 'Frecuencia de uso',
                 'field_type' => 'integer',
-            ],
-            16 => [
+            ),
+            16 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdprene',
                 'description' => 'Reglas del Negocio',
                 'field_type' => 'string',
-            ],
-            17 => [
+            ),
+            17 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdprees',
                 'description' => 'Requerimientos especiales',
                 'field_type' => 'string',
-            ],
-            18 => [
+            ),
+            18 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Usuario que Crea el Proceso',
                 'name' => 'rdpuscr',
                 'field_type' => 'string',
-            ],
-            19 => [
+            ),
+            19 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpfecr',
                 'description' => 'Fecha de Creacion',
                 'field_type' => 'date',
-            ],
-            20 => [
+            ),
+            20 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Usuario que Modifica el Proceso',
                 'name' => 'rdpusmo',
                 'field_type' => 'string',
-            ],
-            21 => [
+            ),
+            21 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpfemo',
                 'description' => 'Fecha de Modificacion',
                 'field_type' => 'date',
-            ],
-            22 => [
+            ),
+            22 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Filtra el Nombre del Proceso de acuerdo a la Opcion de Menu',
                 'name' => 'rdpfinp',
                 'field_type' => 'string',
-            ],
-            23 => [
+            ),
+            23 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdpobse',
                 'description' => 'Observaciones',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trdife\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trdife\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcosec1',
                 'field_type' => 'integer',
                 'description' => 'Clave primario',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcoanof',
                 'description' => 'Ejercicio Economico',
                 'field_type' => 'integer',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcodife',
                 'field_type' => 'date',
                 'description' => 'Dia Festivo',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcoordi',
                 'field_type' => 'integer',
                 'description' => 'Ordinal',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcodesc',
                 'description' => 'Descripcion de la Constante',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Situacion del Dia Festivo',
                 'name' => 'rcositu',
                 'field_type' => 'integer',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trdipo\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trdipo\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdisecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Division Politica',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Codigo Principal',
                 'name' => 'rdicodi',
                 'field_type' => 'string',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdicpad',
                 'field_type' => 'string',
                 'description' => 'odigo Padre',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Nombre Largo',
                 'name' => 'rdinoml',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rdinomc',
                 'description' => 'Nombre Corto',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'integer',
                 'name' => 'rdinive',
                 'description' => 'Nivel',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdiorde',
                 'field_type' => 'integer',
                 'description' => 'Orden',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Tresod\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Tresod\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'redsecu',
                 'description' => 'Opcion: Maestro de Estructura Organizacional (Detalle)',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rehsecu',
                 'field_type' => 'integer',
                 'description' => 'Opcion: Maestro de Estructura Organizacional (Cabecera)',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Codigo del Detalle',
                 'name' => 'redcode',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'reddede',
                 'description' => 'Descripcion del Detalle',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'redvade',
                 'description' => 'Valor del Detalle',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Tresoh\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Tresoh\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rehsecu',
                 'description' => 'Opcion: Maestro de Estructura Organizacional (Cabecera)',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'tre_rehsecu',
                 'field_type' => 'integer',
                 'description' => 'Opcion: Maestro de Estructura Organizacional (Cabecera)',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rehcoes',
                 'description' => 'Codigo de la Estructura',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rehnomb',
                 'description' => 'Nombre de la Estructura',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rehales',
                 'description' => 'Alias de la Estructura',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rehdees',
                 'description' => 'Descripcion de la Estructura',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Orden de Despliegue',
                 'name' => 'rehorde',
                 'field_type' => 'integer',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rehnive',
                 'field_type' => 'integer',
                 'description' => 'Nivel de la Estructura',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Bandera de ultimo nivel',
                 'name' => 'rehbaun',
                 'field_type' => 'integer',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rehpaex',
                 'description' => 'Parametros Extras para cada Estructura',
                 'field_type' => 'string',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rehsitu',
                 'field_type' => 'integer',
                 'description' => 'Situacion de la Estructura',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trhcos\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trhcos\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhcsecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Historico Constantes del Sistema',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmosecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Modulos',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcosecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Constantes del Sistema',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhccodi',
                 'description' => 'Codigo de la Constante',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhcvalo',
                 'description' => 'Valor',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhcconf',
                 'description' => 'Configuracion adicional para la creacion de Parametro',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhcdesc',
                 'description' => 'Descripcion de la Constante',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Tipo de Constante S=String,N=Numerico y D=DateTime',
                 'name' => 'rhctipo',
                 'field_type' => 'integer',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhcfepr',
                 'description' => 'Fecha de Proceso (Fecha y Hora)',
                 'field_type' => 'date',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhcidco',
                 'description' => 'Identificacion del computador',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trhpad\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trhpad\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdsecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Historico Parametros del Sistema (Detalle)',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbsecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Parametros del Modulo',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbseca',
                 'description' => 'Secuencial de TRTABH Parametros del Sistema Cabecera',
                 'field_type' => 'integer',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdcopa',
                 'description' => 'Codigo del Parametro',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Codigo de Tabla Relacionada',
                 'name' => 'rhdcota',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdcoes',
                 'description' => 'Codigo Especifico',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Descripcion Especifica del Parametro',
                 'name' => 'rhddees',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdan01',
                 'description' => 'Dato Alfanumerico 1',
                 'field_type' => 'string',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Dato Alfanumerico 2',
                 'name' => 'rhdan02',
                 'field_type' => 'string',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdan03',
                 'description' => 'Dato Alfanumerico 3',
                 'field_type' => 'string',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Dato Alfanumerico 4',
                 'name' => 'rhdan04',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Dato Alfanumerico 5',
                 'field_type' => 'string',
                 'name' => 'rhdan05',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdan06',
                 'description' => 'Dato Alfanumerico 6',
                 'field_type' => 'string',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Dato Alfanumerico 7',
                 'name' => 'rhdan07',
                 'field_type' => 'string',
-            ],
-            14 => [
+            ),
+            14 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdan08',
                 'description' => 'Dato Alfanumerico 8',
                 'field_type' => 'string',
-            ],
-            15 => [
+            ),
+            15 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdan09',
                 'description' => 'Dato Alfanumerico 9',
                 'field_type' => 'string',
-            ],
-            16 => [
+            ),
+            16 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdan10',
                 'description' => 'Dato Alfanumerico 10',
                 'field_type' => 'string',
-            ],
-            17 => [
+            ),
+            17 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdnu01',
                 'description' => 'Dato Numerico 1',
                 'field_type' => 'numeric',
-            ],
-            18 => [
+            ),
+            18 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdnu02',
                 'description' => 'Dato Numerico 2',
                 'field_type' => 'numeric',
-            ],
-            19 => [
+            ),
+            19 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdnu03',
                 'field_type' => 'numeric',
                 'description' => 'Dato Numerico 3',
-            ],
-            20 => [
+            ),
+            20 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdfepr',
                 'field_type' => 'date',
                 'description' => 'Fecha de Proceso (Fecha y Hora)',
-            ],
-            21 => [
+            ),
+            21 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhdidco',
                 'description' => 'Identificacion del computador',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trhpah\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trhpah\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhsecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Historicos Parametros del Sistema (Cabecera)',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbsec1',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Parametros del Modulo',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhcopa',
                 'description' => 'Codigo del Parametro',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhcoes',
                 'description' => 'Codigo Especifico',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Descripcion Especifica del Parametro',
                 'name' => 'rhhdees',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhan01',
                 'description' => 'Descripcion Dato Alfanumerico 1',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Descripcion Dato Alfanumerico 2',
                 'name' => 'rhhan02',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhan03',
                 'description' => 'Descripcion Dato Alfanumerico 3',
                 'field_type' => 'string',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhan04',
                 'field_type' => 'string',
                 'description' => 'Descripcion Dato Alfanumerico 4',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhan05',
                 'description' => 'Descripcion Dato Alfanumerico 5',
                 'field_type' => 'string',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Descripcion Dato Alfanumerico 6',
                 'name' => 'rhhan06',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rhhan07',
                 'description' => 'Descripcion Dato Alfanumerico 7',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Descripcion Dato Alfanumerico 8',
                 'name' => 'rhhan08',
                 'field_type' => 'string',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhan09',
                 'description' => 'Descripcion Dato Alfanumerico 9',
                 'field_type' => 'string',
-            ],
-            14 => [
+            ),
+            14 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rhhan10',
                 'description' => 'Descripcion Dato Alfanumerico 10',
-            ],
-            15 => [
+            ),
+            15 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Descripcion Dato Numerico 01',
                 'name' => 'rhhnu01',
                 'field_type' => 'string',
-            ],
-            16 => [
+            ),
+            16 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rhhnu02',
                 'description' => 'Descripcion Dato Numerico 02',
-            ],
-            17 => [
+            ),
+            17 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Descripcion Dato Numerico 03',
                 'name' => 'rhhnu03',
                 'field_type' => 'string',
-            ],
-            18 => [
+            ),
+            18 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhacpu',
                 'field_type' => 'integer',
                 'description' => 'Acceso Publico',
-            ],
-            19 => [
+            ),
+            19 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhacwe',
                 'field_type' => 'integer',
                 'description' => 'Acceso WEB',
-            ],
-            20 => [
+            ),
+            20 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhfepr',
                 'field_type' => 'date',
                 'description' => 'Fecha de Proceso (Fecha y Hora)',
-            ],
-            21 => [
+            ),
+            21 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhhidco',
                 'description' => 'Identificacion del computador',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trhpam\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trhpam\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhmsecu',
                 'description' => 'Estos datos se ingresan en la Opcion : Historico Parametros del Sistema (Modulos)',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmoseau',
                 'field_type' => 'integer',
                 'description' => 'Secuencial del Modulo insertado',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbseau',
                 'field_type' => 'integer',
                 'description' => 'Secuencial de Parametros del Sistema (Cabecera)',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhmcome',
                 'description' => 'Comentario',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhmfepr',
                 'field_type' => 'date',
                 'description' => 'Fecha de Proceso (Fecha y Hora)',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rhmidco',
                 'description' => 'Identificacion del computador',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trmset\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trmset\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmesecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Mensajes de Etiquetas',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmosecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Modulos',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnosecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Menues y Opciones',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmecodi',
                 'description' => 'Codigo del Mensaje',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmetext',
                 'description' => 'Texto de la Etiqueta',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmecome',
                 'description' => 'Comentario',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmealia',
                 'description' => 'Alias del texto del label',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmecavi',
                 'field_type' => 'integer',
                 'description' => 'Controla si el label y el texto son visibles o no',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmepaex',
                 'description' => 'Parametros extras',
                 'field_type' => 'string',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Valor predeterminado',
                 'name' => 'rmevapr',
                 'field_type' => 'string',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rmetipo',
                 'description' => 'Identifica si la etiqueta es para Formulario o para Reporte',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmeubic',
                 'description' => 'Informacion Filtro de Reportes',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trmsus\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trmsus\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmssecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Mensajes para el Usuario',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmscodi',
                 'description' => 'Codigo del Mensaje',
                 'field_type' => 'string',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'description' => 'Nombre del mensaje',
                 'name' => 'rmsmens',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmssitu',
                 'field_type' => 'integer',
                 'description' => 'Estado Mensaje del Usuario',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmsidio',
                 'field_type' => 'integer',
                 'description' => 'Idioma',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmsdesc',
                 'description' => 'Descripcion',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Tropcd\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Tropcd\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpasec2',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Menues y Opciones',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnosecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Menues y Opciones',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpatipo',
                 'field_type' => 'integer',
                 'description' => 'Tipo Parametro del Formulario',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpaidio',
                 'field_type' => 'integer',
                 'description' => 'Tipo Parametro del Formulario',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpanomb',
                 'description' => 'Nombre del Parametro',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpasql',
                 'description' => 'Query para ejecutar y llenar la lista',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpaextr',
                 'description' => 'Parametros extras para el Formulario',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Tropch\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Tropch\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnosecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Menues y Opciones',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmosecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Modulos',
                 'field_type' => 'integer',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rcodopc',
                 'description' => 'Codigo del Nodo de cada Opcion de Menu',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnodopc',
                 'description' => 'Nodo raiz de donde nace la Opcion de Menu',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnomopc',
                 'description' => 'Nombre que despliega al Usuario en el Menu',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnoalias',
                 'description' => 'Nombre personalizado, tiene prioridad al momento de desplegar el menu al Usuario.',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rordopc',
                 'description' => 'Orden de despliegue',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rforopc',
                 'description' => 'Nombre fisico del archivo HTML',
                 'field_type' => 'string',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Nivel de la Opcion',
                 'name' => 'rnivopc',
                 'field_type' => 'string',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'field_type' => 'string',
                 'name' => 'rultopc',
                 'description' => 'Ultimo Nivel',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdesopc',
                 'description' => 'Descripcion de la opcion',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnopsit',
                 'description' => 'Situacion de la Opcion',
                 'field_type' => 'integer',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnopaex',
                 'description' => 'Parametros extras para cada opcion',
                 'field_type' => 'integer',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trperd\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trperd\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrdsecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Relacion Perfiles y Companias',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'bcisecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Empresa',
                 'field_type' => 'integer',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpesecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Perfiles de Usuarios',
                 'field_type' => 'integer',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrdparm',
                 'description' => 'Parametros de la Relacion Perfiles y Companias',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trpref\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trpref\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpfsesu',
                 'field_type' => 'integer',
                 'description' => 'Secuencial para Clave Primaria',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'russecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Usuarios del Sistema',
                 'field_type' => 'integer',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpfcode',
                 'description' => 'Codigo de la preferencia',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpfvalo',
                 'description' => 'Valor que toma la Preferencia',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpfdiip',
                 'description' => 'Direccion IP',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpfmact',
                 'description' => 'MAC  (Media Access Control) de la tarjeta de Red',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpfdesc',
                 'description' => 'Descripcion de la preferencia',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpfpaex',
                 'description' => 'Parametros Extras de la Preferencia',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trpriv\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trpriv\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rprsecu',
                 'field_type' => 'integer',
                 'description' => 'Estos datos se ingresan en la Opcion: Privilegios de Perfiles',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpesecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Perfiles de Usuarios',
                 'field_type' => 'integer',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rmosecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Modulos',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rnosecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Maestro de Menues y Opciones',
                 'field_type' => 'integer',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rpresta',
                 'description' => 'Estado del Privilegio',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rprescr',
                 'description' => 'Permiso de escritura',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trreer\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trreer\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rresecu',
                 'description' => 'Opcion: Registro de Errores',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrenota',
                 'description' => 'Nombre de la Tabla',
                 'field_type' => 'string',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrecata',
                 'description' => 'Campo de la Tabla',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreidma',
                 'description' => 'Identificacion del Maestro',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rresuoe',
                 'description' => 'Sentencia u Operacion Ejecutada',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrecome',
                 'description' => 'Comentarios',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rresosu',
                 'description' => 'Solucion sugerida',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreorer',
                 'description' => 'Origen del Error',
                 'field_type' => 'string',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rretier',
                 'description' => 'Tipo de Error',
                 'field_type' => 'string',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrefepr',
                 'description' => 'Fecha Proceso de Error',
                 'field_type' => 'string',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreenem',
                 'description' => 'Enviado por Email al Responsable',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrenopr',
                 'description' => 'Nombre de Proceso',
                 'field_type' => 'string',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rredepr',
                 'description' => 'Descripcion del Proceso',
                 'field_type' => 'string',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrenoap',
                 'description' => 'Nombre del Aplicativo en siglas',
                 'field_type' => 'string',
-            ],
-            14 => [
+            ),
+            14 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreexpr',
                 'description' => 'Extension propietaria del Proceso',
                 'field_type' => 'string',
-            ],
-            15 => [
+            ),
+            15 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreexre',
                 'description' => 'Extension relacionada con el Proceso',
                 'field_type' => 'string',
-            ],
-            16 => [
+            ),
+            16 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreacin',
                 'description' => 'Actores que intervienen',
                 'field_type' => 'string',
-            ],
-            17 => [
+            ),
+            17 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrerecr',
                 'description' => 'Referencias cruzadas',
                 'field_type' => 'string',
-            ],
-            18 => [
+            ),
+            18 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rretrig',
                 'description' => 'Trigger',
                 'field_type' => 'string',
-            ],
-            19 => [
+            ),
+            19 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreprco',
                 'description' => 'Pre Condiciones',
                 'field_type' => 'string',
-            ],
-            20 => [
+            ),
+            20 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrepoco',
                 'description' => 'Post Condiciones',
                 'field_type' => 'string',
-            ],
-            21 => [
+            ),
+            21 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreflno',
                 'description' => 'Flujo normal',
                 'field_type' => 'string',
-            ],
-            22 => [
+            ),
+            22 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreflal',
                 'description' => 'Flujos alternativos',
                 'field_type' => 'string',
-            ],
-            23 => [
+            ),
+            23 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreinad',
                 'description' => 'Inclusiones adicionales',
                 'field_type' => 'string',
-            ],
-            24 => [
+            ),
+            24 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrefrus',
                 'description' => 'Frecuencia de uso',
                 'field_type' => 'string',
-            ],
-            25 => [
+            ),
+            25 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrerene',
                 'description' => 'Reglas del Negocio',
                 'field_type' => 'string',
-            ],
-            26 => [
+            ),
+            26 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrerees',
                 'description' => 'Requerimientos especiales',
                 'field_type' => 'string',
-            ],
-            27 => [
+            ),
+            27 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreuscr',
                 'description' => 'Usuario que Crea el Proceso',
                 'field_type' => 'string',
-            ],
-            28 => [
+            ),
+            28 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rrefemo',
                 'description' => 'Fecha de Modificacion',
                 'field_type' => 'string',
-            ],
-            29 => [
+            ),
+            29 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rreobse',
                 'description' => 'Observaciones',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trtabd\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trtabd\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbsecu',
                 'description' => 'Estos datos se ingresan en la Opcion: Parametros del Modulo',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbsec1',
                 'description' => 'Estos datos se ingresan en la Opcion: Parametros del Modulo',
                 'field_type' => 'string',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbiden',
                 'description' => 'Codigo del Parametro',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbtare',
                 'description' => 'Codigo de Tabla Relacionada',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbespe',
                 'description' => 'Codigo Especifico',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdesesp',
                 'description' => 'Descripcion Especifica del Parametro',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbalf1',
                 'description' => 'Dato Alfanumerico 1',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbalf2',
                 'description' => 'Dato Alfanumerico 2',
                 'field_type' => 'string',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbalf3',
                 'description' => 'Dato Alfanumerico 3',
                 'field_type' => 'string',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbalf4',
                 'description' => 'Dato Alfanumerico 4',
                 'field_type' => 'string',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbalf5',
                 'description' => 'Dato Alfanumerico 5',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbalf6',
                 'description' => 'Dato Alfanumerico 6',
                 'field_type' => 'string',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbalf7',
                 'description' => 'Dato Alfanumerico 7',
                 'field_type' => 'string',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbalf8',
                 'description' => 'Dato Alfanumerico 8',
                 'field_type' => 'string',
-            ],
-            14 => [
+            ),
+            14 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbalf9',
                 'description' => 'Dato Alfanumerico 9',
                 'field_type' => 'string',
-            ],
-            15 => [
+            ),
+            15 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbal10',
                 'description' => 'Dato Alfanumerico 10',
                 'field_type' => 'string',
-            ],
-            16 => [
+            ),
+            16 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbnum1',
                 'description' => 'Dato Numerico 1',
                 'field_type' => 'string',
-            ],
-            17 => [
+            ),
+            17 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbnum2',
                 'description' => 'Dato Numerico 2',
                 'field_type' => 'string',
-            ],
-            18 => [
+            ),
+            18 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbnum3',
                 'description' => 'Dato Numerico 3',
                 'field_type' => 'string',
-            ],
-        ],
-        'Seguridad\\V1\\Rest\\Trtabh\\Validator' => [
-            0 => [
+            ),
+        ),
+        'Seguridad\\V1\\Rest\\Trtabh\\Validator' => array(
+            0 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbsec1',
                 'description' => 'Estos datos se ingresan en la Opcion: Parametros del Modulo',
                 'field_type' => 'integer',
-            ],
-            1 => [
+            ),
+            1 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Codigo del Parametro',
                 'name' => 'rtbiden',
                 'field_type' => 'integer',
-            ],
-            2 => [
+            ),
+            2 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbespe',
                 'description' => 'Codigo Especifico',
                 'field_type' => 'string',
-            ],
-            3 => [
+            ),
+            3 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rdesesp',
                 'description' => 'Descripcion Especifica del Parametro',
                 'field_type' => 'string',
-            ],
-            4 => [
+            ),
+            4 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa01',
                 'description' => 'Descripcion Dato Alfanumerico 1',
                 'field_type' => 'string',
-            ],
-            5 => [
+            ),
+            5 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa02',
                 'description' => 'Descripcion Dato Alfanumerico 2',
                 'field_type' => 'string',
-            ],
-            6 => [
+            ),
+            6 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa03',
                 'description' => 'Descripcion Dato Alfanumerico 3',
                 'field_type' => 'string',
-            ],
-            7 => [
+            ),
+            7 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa04',
                 'description' => 'Descripcion Dato Alfanumerico 4',
                 'field_type' => 'string',
-            ],
-            8 => [
+            ),
+            8 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa05',
                 'description' => 'Descripcion Dato Alfanumerico 5',
                 'field_type' => 'string',
-            ],
-            9 => [
+            ),
+            9 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Descripcion Dato Alfanumerico 6',
                 'name' => 'ralfa06',
                 'field_type' => 'string',
-            ],
-            10 => [
+            ),
+            10 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa07',
                 'description' => 'Descripcion Dato Alfanumerico 7',
                 'field_type' => 'string',
-            ],
-            11 => [
+            ),
+            11 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa08',
                 'description' => 'Descripcion Dato Alfanumerico 8',
                 'field_type' => 'string',
-            ],
-            12 => [
+            ),
+            12 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa09',
                 'description' => 'Descripcion Dato Alfanumerico 9',
                 'field_type' => 'string',
-            ],
-            13 => [
+            ),
+            13 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Descripcion Dato Alfanumerico 10',
                 'name' => 'ralfa10',
                 'field_type' => 'string',
-            ],
-            14 => [
+            ),
+            14 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa11',
                 'description' => 'Descripcion Dato Numerico 1',
                 'field_type' => 'string',
-            ],
-            15 => [
+            ),
+            15 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa12',
                 'description' => 'Descripcion Dato Numerico 2',
                 'field_type' => 'string',
-            ],
-            16 => [
+            ),
+            16 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'ralfa13',
                 'description' => 'Descripcion Dato Numerico 3',
                 'field_type' => 'string',
-            ],
-            17 => [
+            ),
+            17 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'name' => 'rtbpubl',
                 'description' => 'Acceso Publico',
                 'field_type' => 'string',
-            ],
-            18 => [
+            ),
+            18 => array(
                 'required' => true,
-                'validators' => [],
-                'filters' => [],
+                'validators' => array(),
+                'filters' => array(),
                 'description' => 'Acceso WEB',
                 'name' => 'rtbacwe',
                 'field_type' => 'string',
-            ],
-        ],
-    ],
-];
+            ),
+        ),
+    ),
+);

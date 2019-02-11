@@ -1,5 +1,6 @@
 <?php
- /**
+
+/**
  * Interface of the user   Trusua Repository
  *
  * It is implemented to program the business logic
@@ -9,54 +10,48 @@
  * @package Seguridad
  * @subpackage Repository
  */
-  namespace Seguridad\Repository;
-  interface ITrusuaRepository
-  
-{
 
-/**
-* Save the current entry
- *
-  * @return void
- */
+namespace Seguridad\Repository;
 
-public function save($data);
+interface ITrusuaRepository
+    {
 
-/**
- * Delete the current entry
- * 
- * @return void
- */
+    /**
+     * Save the current entry
+     *
+     * @return void
+     */
+    public function save($data);
 
-public function delete($id);
+    /**
+     * Delete the current entry
+     * 
+     * @return void
+     */
+    public function delete($id);
 
-/**
- * Find an entry
- *
- * Resets entry state if matching id found.
- *
- * @param  int $id
+    /**
+     * Find an entry
+     *
+     * Resets entry state if matching id found.
+     *
+     * @param  int $id
 
- * @return Producto
-  */
+     * @return Producto
+     */
+    public function find($id);
 
- public function find($id);
+    /**
+     * Fetch a list of entries that satisfy the parameters <params>
+     *
+     * @return array
+     */
+    public function fetchList($where = null, $order = null, $count = null, $offset = null);
 
- /**
-  * Fetch a list of entries that satisfy the parameters <params>
-  *
-  * @return array
-  */
-
- public function fetchList($where = null, $order = null, $count = null, $offset = null);
-
- /**
-  * Fetch all entries
-  *
-  * @return ResultSet
-  */
-
- public function fetchAll();
-
-  
-}
+    /**
+     * Fetch all entries
+     *
+     * @return ResultSet
+     */
+    public function fetchAll();
+    }

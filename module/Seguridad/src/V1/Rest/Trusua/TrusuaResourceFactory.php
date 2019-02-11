@@ -17,7 +17,7 @@ class TrusuaResourceFactory
 
   public function __invoke($services)
   {
-  $mapper = $services->get(ITrusuaRepository::class);
-  return new TrusuaResource($mapper);
+     $mapper = $services->get(ITrusuaRepository::class);
+     return new TrusuaResource($mapper);
    }
 }
