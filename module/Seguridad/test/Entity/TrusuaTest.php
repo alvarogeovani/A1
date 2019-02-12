@@ -1,5 +1,4 @@
 <?php
-
 namespace SeguridadTest\Entity;
 
 use Seguridad\Entity\Trusua;
