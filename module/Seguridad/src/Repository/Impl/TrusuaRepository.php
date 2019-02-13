@@ -10,92 +10,96 @@
  * @package Seguridad
  * @subpackage Repository
  */
-  namespace Seguridad\Repository\Impl;
-  use Seguridad\Core\BaseRepository;
-  use Seguridad\Entity\Trusua;
-  use Seguridad\Repository\ITrusuaRepository;
-  class TrusuaRepository implements ITrusuaRepository
-  
-{
 
- protected $tableGateway;
- public function __construct(BaseRepository $tableGateway)
-{
- $this->tableGateway = $tableGateway;
- }
+namespace Seguridad\Repository\Impl;
 
-	/**
-	* Save the current entry
-	* @param  $data
-	* @return int
-	*/
-	public function save($data)
-	{
-		$ojbData = new Trusua($data);
-	if ($ojbData->getRussecu() == null || $ojbData->getRussecu() == 0)
-	{
-	$arrayData = $ojbData->toArray();
-	($arrayData['russecu']);
-	return $this->tableGateway->insert($arrayData);
-	} else
-	{
-	if ($this->find($ojbData->getRussecu()))
-	 {
-	 $this->tableGateway->update($ojbData->toArray(), ['russecu' => $ojbData->getRussecu()]);
-	  return $ojbData->getRussecu();
-	} else
-	 {
-	      throw new \RuntimeException('Trusua Id='.$ojbData->getRussecu().' does not exist');
-	 }
-	  }
-	}
+use Seguridad\Core\BaseRepository;
+use Seguridad\Entity\Trusua;
+use Seguridad\Repository\ITrusuaRepository;
 
-	/**
-	* Delete the current entry
-	* @param string Where|array $where
-	* @return int
-	*/
-	public function delete($id)
-	{
-		$this->tableGateway->delete(['russecu' => (int) $id]);
-	}
+class TrusuaRepository implements ITrusuaRepository
+    {
 
-	/**
-	*
-	* Find an entry
-	* Resets entry state if matching id found.
-	* @param  int $id
-	* @return Trusua
-	*/
-	public function find($id)
-	{
-	 $idt = (int) $id;
-	$row = $this->tableGateway->find(['russecu' => $idt]);
-	if (!$row)
-	 {
-	 throw new \RuntimeException('The Trusua could not be found:russecu='.$id);
-	}
-	return $row;
-	}
+    protected $tableGateway;
 
-	/**
-	* Fetch a list of entries that satisfy the parameters <params>
-	*
-	* @return array|ResultSet
-	*/
-	public function fetchAll()
-	{
-		return $this->tableGateway->fetchAll();
-	}
+    public function __construct(BaseRepository $tableGateway)
+    {
+        $this->tableGateway = $tableGateway;
+    }
 
-	/**
-	* Fetch all entries
-	*
-	* @return array|ResultSet
-	*/
-	public function fetchList($where = null, $order = null, $count = null, $offset = null)
-	{
-		return $this->tableGateway->fetchList($where, $order, $count, $offset);
-	}
+    /**
+     * Save the current entry
+     * @param  $data
+     * @return int
+     */
+    public function save($data)
+    {
+        $ojbData = new Trusua($data);
+        if ($ojbData->getRussecu() == null || $ojbData->getRussecu() == 0)
+        {
+            $arrayData = $ojbData->toArray();
+            //($arrayData['russecu']);
+            return $this->tableGateway->insert($arrayData);
+        } else
+        {
+            if ($this->find($ojbData->getRussecu()))
+            {
+                $this->tableGateway->update($ojbData->toArray(), ['russecu' => $ojbData->getRussecu()]);
+            } else
+            {
+                throw new \RuntimeException('Trusua Id=' . $ojbData->getRussecu() . ' does not exist');
+            }
+        }
+    }
 
-}
+    /**
+     * Delete the current entry
+     * @param string Where|array $where
+     * @return int
+     */
+    public function delete($id)
+    {
+        $this->tableGateway->delete(['russecu' => (int) $id]);
+    }
+
+    /**
+     *
+     * Find an entry
+     * Resets entry state if matching id found.
+     * @param  int $id
+     * @return Trusua
+     */
+    public function find($id)
+    {
+        $id = (int) $id;
+        $row = $this->tableGateway->find(['russecu' => $id]);
+        if (! $row) {
+            throw new RuntimeException(sprintf(
+                'Could not find row with identifier %d',
+                $id
+            ));
+        }
+        return $row;
+    }
+
+    /**
+     * Fetch a list of entries that satisfy the parameters <params>
+     *
+     * @return array|ResultSet
+     */
+    public function fetchAll()
+    {
+        return $this->tableGateway->fetchAll();
+    }
+
+    /**
+     * Fetch all entries
+     *
+     * @return array|ResultSet
+     */
+    public function fetchList($where = null, $order = null, $count = null, $offset = null)
+    {
+        return $this->tableGateway->fetchList($where, $order, $count, $offset);
+    }
+
+    }

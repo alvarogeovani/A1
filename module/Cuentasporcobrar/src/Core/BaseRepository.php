@@ -207,6 +207,8 @@ class BaseRepository extends AbstractTableGateway
             throw new FindExcepcion($ex);
         }
     }
+    
+    
 
     /**
      * Conviente el obj que envia el cliente a un arreglo
